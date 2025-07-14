@@ -403,6 +403,28 @@
   
 
       
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../../examples/01-examples/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Examples
+
+        </a>
+      </li>
+    
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -3002,6 +3024,8 @@
           
         
       
+        
+      
     
     
     
@@ -3029,6 +3053,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
@@ -3038,6 +3067,29 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../support/discord/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Join the DCC-EX Discord Server
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -3522,6 +3574,106 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../examples/01-examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../examples/12-i2c-wiring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    I2C Wiring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -3544,7 +3696,7 @@
 <h1 id="defining-servo-turnouts">Defining Servo turnouts<a class="headerlink" href="#defining-servo-turnouts" title="Permanent link">&para;</a></h1>
 <p>(This does not include servos driven from track connected DCC decoders. See <a href="../02-defining-dcc-turnouts/">DCC Decoders</a>)</p>
 <h2 id="important-considerations-for-servo-operation">Important considerations for servo operation<a class="headerlink" href="#important-considerations-for-servo-operation" title="Permanent link">&para;</a></h2>
-<p>Servo turnouts are driven through a <a href="?PCA9685">PCA9685</a> servo control board or an <a href="?ioexpander">EX-IOExpander</a>.</p>
+<p>Servo turnouts are driven through a <a href="?PCA9685">PCA9685</a> servo control board on an <a href="?ioexpander">EX-IOExpander</a>.</p>
 <p>Test, test, test your servo parameters prior to connecting to an actual turnout/point. If you have defined angles that exceed the physical limits of your turnout, you will likely damage it and/or the servo mechanism.</p>
 <p>Treat each servo and turnout as an individual as not all servos (or turnouts/points for that matter) are created equal. An angle that works with one servo and associated turnout will not necessarily provide the exact same result with another. Differences in servo brands, mounting methods, and even normal manufacturing tolerances will need to be factored in to the servo angles in use.</p>
 <p>The EX-Toolbox Android application provides a servo movement testing tool to help you discover the necessary values for the angles below.</p>
