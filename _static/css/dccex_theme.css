@@ -95,8 +95,8 @@
   --md-accent-fg-color--dark:   #00B6CC;
 
   /* Text colours for dark mode */
-  --md-default-fg-color:        #F5F5F5; /* Light gray text */
-  --md-default-fg-color--light: #E0E0E0; /* Slightly darker light gray */
+  --md-default-fg-color:        #DDDDDD; /* Light gray text */
+  --md-default-fg-color--light: #00B0C0; /* Subtle steel tone */
   --md-default-fg-color--dark:  #FFFFFF; /* Pure white for strong contrast */
 
   /* Typeset colour shades */
@@ -186,10 +186,56 @@
   line-height: 1.4;
 }
 
+/* NAVIGATION MENU STYLING */
+.md-tabs__item {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.md-tabs__item:first-of-type {
+  margin-left: 0.5rem;
+}
+
+.md-tabs__item--active {
+  font-weight: 700;
+  padding: 0 0.8rem;
+  border-radius: 999px; /* Pill shape */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode specific styles */
+[data-md-color-scheme="dccex-light"] .md-tabs__item--active {
+  color: var(--md-default-bg-color);
+  background-color: var(--md-primary-fg-color--dark);
+  box-shadow: 
+    0 2px 8px rgba(0, 151, 151, 0.6), /* Deeper shadow using primary color */
+    0 4px 16px rgba(0, 151, 151, 0.4);
+}
+
+/* Dark mode specific styles */
+[data-md-color-scheme="dccex-dark"] .md-tabs__item--active {
+  color: var(--md-default-bg-color);
+  background-color: var(--md-primary-fg-color--dark);
+  box-shadow: 
+    0 2px 8px rgba(0, 53, 61, 0.6), /* Deeper shadow using dark mode primary */
+    0 4px 16px rgba(0, 53, 61, 0.4);
+}
+
+
+/* Ensure the link text within the active tab also gets the correct color */
+[data-md-color-scheme="dccex-light"] .md-tabs__item--active .md-tabs__link {
+  color: var(--md-default-bg-color);
+}
+
+[data-md-color-scheme="dccex-dark"] .md-tabs__item--active .md-tabs__link {
+  color: var(--md-default-bg-color);
+}
+
 /* CUSTOM HEADER STYLES */
 .md-typeset h1 {
   font-family: Audiowide,Helvetica,Arial,sans-serif !important;
   font-size: 180% !important;
+  color: var(--md-default-fg-color--dark);
 }
 
 .md-typeset h2 {
@@ -232,9 +278,28 @@
   margin-bottom: 0.6em;
 }
 
+/* Left border accent, underline, and letter spacing for more emphasis */
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5 {
+  border-left: 4px solid var(--md-accent-fg-color--dark);
+  padding-left: 0.5rem;
+}
+
+/* Set image sizes when used in headers */
+.md-typeset .header-img {
+  height: 1em;
+  vertical-align: middle;
+}
+
 /* Override header topic font */
 .md-header__topic {
   font-family: Audiowide,Helvetica,Arial,sans-serif !important;
+}
+
+.md-header__topic:first-child {
+  font-weight: inherit;
 }
 
 /* FOOTER MODIFICATIONS */
@@ -315,6 +380,7 @@
 
 .md-typeset .grid.cards.clickable > ul > li hr {
   border-top: 1px solid var(--md-accent-fg-color--dark);
+  margin: 0;
 }
 
 /* Make entire card clickable - utilises Javascript clickable-cards.js */
@@ -420,6 +486,7 @@
 
 .md-typeset .grid.cards.static > ul > li hr {
   border-top: 1px solid var(--md-accent-fg-color--dark);
+  margin: 0;
 }
 
 .md-typeset .grid.cards.static > ul > li h2 {
@@ -430,6 +497,7 @@
   font-size: 0.8rem !important;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
+  border-left: 0;
   width: 100%;
   box-sizing: border-box;
 }
@@ -483,4 +551,15 @@
 
 .md-typeset [type="checkbox"]:checked + .task-list-indicator::before {
   background-color: var(--md-tasklist-checked-color);
+}
+
+/* LEGACY DOCS LINK STYLING */
+
+/* Ensure links to the legacy docs indicate a new tab, see legacy-docs-new-tab.js script also */
+a.external-link-icon::after {
+  content: "↗";
+  display: inline-block;
+  margin-left: 0.2em;
+  width: 1em;
+  height: 1em;
 }
