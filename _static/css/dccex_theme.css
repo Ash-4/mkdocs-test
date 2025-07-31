@@ -71,6 +71,9 @@
   /* Tasklist colours */
   --md-tasklist-unchecked-color: #E5E5E5;
   --md-tasklist-checked-color: #009FB5;
+
+  /* Table border colour */
+  --md-typeset-table-color: #00B6CC;
 }
 
 /* --- DCC-EX Dark Color Scheme Overrides --- */
@@ -151,6 +154,9 @@
   /* Tasklist colours */
   --md-tasklist-unchecked-color: #3D3D3D;
   --md-tasklist-checked-color: #00CEF7;
+
+  /* Table border colour */
+  --md-typeset-table-color: #0089A0;
 }
 
 /* Only show image in light mode - style with { .only-light } */
@@ -182,14 +188,19 @@
   padding-top: 0;
 }
 
-.md-typeset p {
-  line-height: 1.4;
-}
+/* .md-typeset p {
+  line-height: 1.5;
+} */
 
 /* NAVIGATION MENU STYLING */
 .md-tabs__item {
+  height: 1.5rem;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
+}
+
+.md-tabs__link {
+  margin-top: 0.3rem;
 }
 
 .md-tabs__item:first-of-type {
@@ -241,14 +252,14 @@
 .md-typeset h2 {
   font-family: Roboto,Helvetica,Arial,sans-serif !important;
   font-weight: 600 !important;
-  font-size: 160% !important;
+  font-size: 140% !important;
   color: var(--md-default-fg-color--dark);
 }
 
 .md-typeset h3 {
   font-family: Roboto,Helvetica,Arial,sans-serif !important;
   font-weight: 600 !important;
-  font-size: 140% !important;
+  font-size: 120% !important;
   font-style: italic !important;
   color: var(--md-default-fg-color--dark);
 }
@@ -256,7 +267,7 @@
 .md-typeset h4 {
   font-family: Roboto,Helvetica,Arial,sans-serif !important;
   font-weight: 600 !important;
-  font-size: 120% !important;
+  font-size: 110% !important;
   color: var(--md-default-fg-color--dark);
 }
 
@@ -273,12 +284,12 @@
 .md-typeset h3,
 .md-typeset h4,
 .md-typeset h5 {
-  line-height: 1.2;
+  /* line-height: 1.4; */
   margin-top: 0.6em;
   margin-bottom: 0.6em;
 }
 
-/* Left border accent, underline, and letter spacing for more emphasis */
+/* Left border accent for more emphasis */
 .md-typeset h2,
 .md-typeset h3,
 .md-typeset h4,
