@@ -3069,6 +3069,8 @@
       
         
       
+        
+      
     
     
     
@@ -3139,6 +3141,29 @@
   
   <span class="md-ellipsis">
     Third Party Products and Sellers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../purchasing/03-merchandise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DCC-EX Merchandise
     
   </span>
   
@@ -3273,7 +3298,7 @@
   
   
   <span class="md-ellipsis">
-    Download and install on Linux
+    Download linux
     
   </span>
   
@@ -4419,6 +4444,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    ESP32 - EX8874
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -4430,6 +4468,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wifi-reliability" class="md-nav__link">
+    <span class="md-ellipsis">
+      WiFi reliability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ioref-voltage" class="md-nav__link">
+    <span class="md-ellipsis">
+      IOREF voltage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-ex8874" class="md-nav__link">
+    <span class="md-ellipsis">
+      One EX8874
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stacked-ex8874" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stacked EX8874
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -5359,6 +5452,34 @@
 
 
 <h1 id="esp32-ex8874">ESP32 - EX8874<a class="headerlink" href="#esp32-ex8874" title="Permanent link">&para;</a></h1>
+<h2 id="wifi-reliability">WiFi reliability<a class="headerlink" href="#wifi-reliability" title="Permanent link">&para;</a></h2>
+<p><img align="right" alt="WeMos R1 D32 IOREF" src="../../../_static/images/esp32/wemos-ioref-label.png" style="width: 20%" /></p>
+<ul>
+<li>Solder a 250 to 330 ohms resistor, GPIO_0 to 3.3V, for reliable WiFi when using the WeMos D1 R32 ESP32duino.</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; <img alt="WeMos R1 D32 resistor" src="../../../_static/images/esp32/resistor-io0.png" style="width: 40%" /></p>
+<h2 id="ioref-voltage">IOREF voltage<a class="headerlink" href="#ioref-voltage" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Do not confuse adding the resistor to correct high voltage on GPIO_0 with the need to work around the incorrect voltage of the IOREF pin.</p>
+</li>
+<li>
+<p>From top to bottom the pins are: IO0, 5V (incorrect -- so not Arduino UNO R3 compliant), RESET, 3.3V, 5V, GND, GND, VIN as seen here:  </p>
+</li>
+</ul>
+<p><img align="right" alt="EX8874 IOREF" src="../../../_static/images/esp32/ioref-override.png" style="width: 25%" /></p>
+<ul>
+<li>
+<p>Note that some boards may not have the IOREF pin location labelled.  Measure the voltage if in doubt.</p>
+</li>
+<li>
+<p>As the IOREF pin on the WeMos D1 R32 is 5V, modify the EX8874 using the 3.3V override solder pad on the EX8874.  &nbsp;If this is not done, the ADC inputs will receive up to 5V when the IOREF pin is 5V.</p>
+</li>
+<li>
+<p>Bend the IOREF pin or confirm that the trace connecting the pin is completely cut.</p>
+</li>
+</ul>
+<h2 id="one-ex8874">One EX8874<a class="headerlink" href="#one-ex8874" title="Permanent link">&para;</a></h2>
 <p>Review of <strong>motor shield define</strong> from MotorDrivers.h for ESP32 WeMos R1 D32</p>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="cp">#elif defined(ARDUINO_ARCH_ESP32)  </span>
 <span class="w">  </span><span class="c1">// STANDARD shield on an ESPDUINO-32 (ESP32 in Uno form factor). The shield must be eiter the  </span>
@@ -5375,6 +5496,43 @@
 <span class="w">  </span><span class="cp">#define EX8874_SHIELD F(&quot;EX8874&quot;),\  </span>
 <span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">MotorDriver</span><span class="p">(</span><span class="mi">25</span><span class="cm">/* 3*/</span><span class="p">,</span><span class="w"> </span><span class="mi">19</span><span class="cm">/*12*/</span><span class="p">,</span><span class="w"> </span><span class="n">UNUSED_PIN</span><span class="p">,</span><span class="w"> </span><span class="mi">13</span><span class="cm">/*9*/</span><span class="p">,</span><span class="w"> </span><span class="mi">35</span><span class="cm">/*A2*/</span><span class="p">,</span><span class="w"> </span><span class="mf">1.27</span><span class="p">,</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span><span class="w"> </span><span class="mi">36</span><span class="w"> </span><span class="cm">/*A4*/</span><span class="p">),</span><span class="w"> </span><span class="err">\</span><span class="w">  </span>
 <span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">MotorDriver</span><span class="p">(</span><span class="mi">23</span><span class="cm">/*11*/</span><span class="p">,</span><span class="w"> </span><span class="mi">18</span><span class="cm">/*13*/</span><span class="p">,</span><span class="w"> </span><span class="n">UNUSED_PIN</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="cm">/*8*/</span><span class="p">,</span><span class="w"> </span><span class="mi">34</span><span class="cm">/*A3*/</span><span class="p">,</span><span class="w"> </span><span class="mf">1.27</span><span class="p">,</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span><span class="w"> </span><span class="mi">39</span><span class="w"> </span><span class="cm">/*A5*/</span><span class="p">)</span><span class="w">  </span>
+</code></pre></div>
+<ul>
+<li>
+<p>STANDARD_MOTOR_SHIELD and EX8874_SHIELD are pre-defined for use with ESP32 in MotorDrivers.h  </p>
+</li>
+<li>
+<p>Do not edit MotorDrivers.h; a custom motor define would be added in config.h  </p>
+</li>
+<li>
+<p>Note how the ESP32 GPIO pin numbers are used, and the Arduino pin locations are shown/commented.</p>
+</li>
+</ul>
+<p>Alternate pins A2 and A3 are required for the WeMos D1 R32 / ESP32duino.<br />
+One EX8874 motor shield would use the motor define EX8874_SHIELD, and update the solder pads to use A2 and A3.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; <img alt="EX8874 WeMos R1 D32 pins" src="../../../_static/images/esp32/esp32duino-ex8874-x1.png" style="width: 70%" /></p>
+<p>When one EX8874 motor shield is used with WeMos R1 D32 ESP32duino, the alternate current sense pins are used as the A0 and A1 pin locations cannot be used as ADC input when WiFi is enabled.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; <img alt="EX8874 WeMos R1 D32 table" src="../../../_static/images/esp32/esp32duino-ex8874-x1b.png" style="width: 80%" /></p>
+<h2 id="stacked-ex8874">Stacked EX8874<a class="headerlink" href="#stacked-ex8874" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Reminder:  &nbsp;No modifications are needed when installing EX8874 for 4 track outputs on EX-CSB1....  </p>
+</li>
+<li>
+<p>Stacking motor shields on WeMos D1 R32 ESP32duino requires a combination of solder pads and complex wiring.<br />
+  Note the location of GPIO pins 15 and 33 (image above), where wires or right-angle header pins will need to be installed on the WeMos R1 D32 ESP32duino.</p>
+</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; <img alt="EX8874 WeMos R1 D32 table" src="../../../_static/images/esp32/esp32duino-ex8874-x2b.png" style="width: 80%" /></p>
+<ul>
+<li>A custom motor define will be needed in config.h</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="cp">#define EX8874_SHIELDX2 F(&quot;EX8874_SHIELDX2&quot;), \  </span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">MotorDriver</span><span class="p">(</span><span class="mi">25</span><span class="cm">/* 3*/</span><span class="p">,</span><span class="w"> </span><span class="mi">19</span><span class="cm">/*12*/</span><span class="p">,</span><span class="w"> </span><span class="n">UNUSED_PIN</span><span class="p">,</span><span class="w"> </span><span class="mi">13</span><span class="cm">/*9*/</span><span class="p">,</span><span class="w"> </span><span class="mi">35</span><span class="cm">/*A2*/</span><span class="p">,</span><span class="w"> </span><span class="mf">1.52</span><span class="p">,</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span><span class="w"> </span><span class="mi">15</span><span class="p">),</span><span class="w"> </span><span class="err">\</span><span class="w">  </span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">MotorDriver</span><span class="p">(</span><span class="mi">23</span><span class="cm">/*11*/</span><span class="p">,</span><span class="w"> </span><span class="mi">18</span><span class="cm">/*13*/</span><span class="p">,</span><span class="w"> </span><span class="n">UNUSED_PIN</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="cm">/*8*/</span><span class="p">,</span><span class="w"> </span><span class="mi">34</span><span class="cm">/*A3*/</span><span class="p">,</span><span class="w"> </span><span class="mf">1.52</span><span class="p">,</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span><span class="w"> </span><span class="mi">32</span><span class="p">),</span><span class="w"> </span><span class="err">\</span><span class="w">  </span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">MotorDriver</span><span class="p">(</span><span class="mi">26</span><span class="cm">/* 2*/</span><span class="p">,</span><span class="w">  </span><span class="mi">5</span><span class="cm">/*10*/</span><span class="p">,</span><span class="w"> </span><span class="n">UNUSED_PIN</span><span class="p">,</span><span class="w"> </span><span class="mi">14</span><span class="cm">/*7*/</span><span class="p">,</span><span class="w"> </span><span class="mi">36</span><span class="cm">/*A4*/</span><span class="p">,</span><span class="w"> </span><span class="mf">1.52</span><span class="p">,</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="cm">/*A0*/</span><span class="p">),</span><span class="w"> </span><span class="err">\</span><span class="w">  </span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">MotorDriver</span><span class="p">(</span><span class="mi">16</span><span class="cm">/* 5*/</span><span class="p">,</span><span class="w"> </span><span class="mi">17</span><span class="cm">/* 4*/</span><span class="p">,</span><span class="w"> </span><span class="n">UNUSED_PIN</span><span class="p">,</span><span class="w"> </span><span class="mi">27</span><span class="cm">/*6*/</span><span class="p">,</span><span class="w"> </span><span class="mi">39</span><span class="cm">/*A5*/</span><span class="p">,</span><span class="w"> </span><span class="mf">1.52</span><span class="p">,</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="cm">/*A1*/</span><span class="p">)</span><span class="w">  </span>
+<span class="w">  </span><span class="cp">#define MOTOR_SHIELD_TYPE EX8874_SHIELDX2</span>
 </code></pre></div>
 <p><mark>TODO</mark></p>
 
@@ -5397,7 +5555,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 14, 2025 05:17:31 UTC">August 14, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 15, 2025 04:48:08 UTC">August 15, 2025</span>
   </span>
 
     
