@@ -5646,26 +5646,24 @@
 <h1 id="guide-to-tuning-a-standard-mode-100khz-i2c-bus">Guide to tuning a standard mode (100kHz) I2C bus:<a class="headerlink" href="#guide-to-tuning-a-standard-mode-100khz-i2c-bus" title="Permanent link">&para;</a></h1>
 <ol>
 <li>
-<p>The two signal lines (SCL &amp; SDA) EACH require a resistor to pull them to a logic high voltage and a device 
-output pin to pull them low.  All devices on an I2C bus segment must use the correct voltage level.
-i.e. 5V (or 3.3V) supply voltage to all pull-up resistors (typically 10k ohms each).</p>
+<p>The two signal lines (SCL &amp; SDA) EACH require a resistor to pull them to a logic high voltage and a device output pin to pull them low.<br />
+    All devices on an I2C bus segment must use the correct voltage level.<br />
+    i.e. 5V (or 3.3V) supply voltage to all pull-up resistors (typically 10k ohms included on each I2C device).</p>
 </li>
 <li>
-<p>Do NOT mix incompatible 3.3V and 5V devices on a segment (without a passive level-shifter). The segment(or sub-bus) is the full wire length  from extremities passing through some devices end-to-end (e.g. PCA9685)
-but NOT through a multiplexer(mux) or bus  buffers (A mux or level shifter can interface different sub-buses/segments).</p>
+<p>Do NOT mix incompatible 3.3V and 5V devices on a segment (without a passive level-shifter).<br />
+    The segment (or sub-bus) is the full wire length from extremities, passing through some devices - end-to-end (e.g. PCA9685), but NOT through a multiplexer (mux) or bus buffers. (A mux or level shifter can interface different sub-buses/segments).</p>
 </li>
 <li>
-<p>Connected devices may, or may not, have a (weak) pullup resistor (pair) on them, typically 10k ohms. We need
-to add up the number of 10k (pairs) of resistors to see if we need to add/remove some.  (alternatively,
-see NOTE below about measuring this in situ)</p>
+<p>Connected devices may, or may not, have a (weak) pullup resistor (pair) on them, typically 10k ohms.<br />
+    We need to add up the number of 10k (pairs) of resistors to see if we need to add/remove some.  (Alternatively, see NOTE below about measuring this in situ.)</p>
 </li>
 <li>
 <p>The pull-up has to be neither too strong (output pins can't pull it down) nor too weak (resistor can't pull
-it up enough)</p>
+it up fast enough).</p>
 </li>
 <li>
-<p>The MAXIMUM number (of 10k ohm) that the (SCL or SDA) output pin can pull down is about 6 (9 on a 3.3V bus)
-so we MAY have to disconnect some pullups (jumpers?) or use a mux.</p>
+<p>The MAXIMUM number (of 10k ohm pullups) that the (SCL or SDA) output pin can pull down is about 6 (9 on a 3.3V bus), so we MAY have to disconnect some pullups (jumpers?) or use a mux.</p>
 </li>
 <li>
 <p>Some devices may not have any pullups, and other devices may EFFECTIVELY have 2 or 3 (4.7k Endpoint = 2x10k)</p>
@@ -5679,8 +5677,8 @@ wire/cable (passing through some devices) between bus segment ends.</p>
 length(L feet) divided by 3. i.e. P = (D + L)/3   This ensures the signal can rise quickly to a good high level.</p>
 </li>
 <li>
-<p>Inversely, allowable max LENGTH(ft) = number of pullups(P) x 3 - number of devices(D) i.e. L = Px3 - D. 
-The practical length varies somewhat with cable type (twisted pair, ribbon, dupont, etc.) so limit your
+<p>Inversely, allowable max LENGTH(ft) = number of pullups(P) x 3 - number of devices(D) i.e. L = Px3 - D.<br />
+    The practical length varies somewhat with cable type (twisted pair, ribbon, dupont, etc.) so limit your
 segment length, say 2/3 of max., to avoid errors and timeouts.</p>
 </li>
 <li>
@@ -5690,7 +5688,7 @@ added for length, BUT if number of pullups is TOO HIGH the only quick fix is to 
     NOTE:  If unsure of the effective number of active pullup resistors(10k), it is possible, after ALL POWER OFF
     FOR SEVERAL MINUTES, to use an ohm meter to measure the net resistance between the SCL line (or SDA) to the
     pullup supply rail (Vcc).  Divide 10k by the resistance for the effective number of pullups.<br />
-    (e.g. if measure 2500ohm then 4 pullups in the circuit)<br />
+    (e.g. if it measures 2500 ohms, there are effectively 4 pullups in the circuit)<br />
     (Do not use any diode test function or continuity test function on the meter, just basic resistance range.)</p>
 </li>
 </ol>
@@ -5740,7 +5738,7 @@ added for length, BUT if number of pullups is TOO HIGH the only quick fix is to 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 22, 2025 16:31:30 UTC">August 22, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 22, 2025 17:19:11 UTC">August 22, 2025</span>
   </span>
 
     
