@@ -5695,7 +5695,7 @@ added for length, BUT if number of pullups is TOO HIGH the only quick fix is to 
 <h2 id="examples">EXAMPLES:<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <pre><code>[for length(L), pullup count(P) &amp; device count(D)]
 </code></pre>
-<p>A. Mega bus:   3 Devices: Mega(10k), 1x MCP23017(10k) and one sparkfun Endpoint (with jumpers cut, 0k)<br />
+<p>A. Mega bus:   3 Devices: Mega(10k), 1x MCP23017(10k) and one sparkfun Endpoint (with jumpers cut; no pullups)<br />
          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max length L = P x 3 - D = 2x3-3 = 3ft (safe 2ft)</p>
 <p>B. Mega bus:   7 Devices: Mega(10k), 3x MCP23017(10k), 2x PCA9685(10k) &amp; Endpoint(4k7)<br />
          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pullups P = 8 (8x10k) too high!  Can cut Endpoint jumpers to remove 2. Then...<br />
@@ -5712,10 +5712,16 @@ added for length, BUT if number of pullups is TOO HIGH the only quick fix is to 
          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max length L = P x 1.5 - D = 4x1.5 - 3 = 3ft (safe 2ft)</p>
 <ul>
 <li>
-<p>In all cases, to increase workable length or speed, add pullups towards the max. number, or add one LTC4311 I2C Accelerator, provided P is not over the max. allowed pullup count.</p>
+<p>In all cases, to increase workable length or speed, add pullups towards the max. number, or add one LTC4311 I2C Accelerator, provided P is not over the max. allowed pullup count.  </p>
+</li>
+<li>
+<p>LTC4311 detects a rising edge and injects a strong, current-limited pull-up current to quickly charge the bus capacitance. This actively accelerates the rise time, producing a cleaner, faster signal without compromising the signal's ability to be pulled low.</p>
 </li>
 <li>
 <p><strong>Note:</strong> LTC4311 to be placed at the head of the chain, not the tail.</p>
+</li>
+<li>
+<p>If you decide you need extra pullups for length, it is a good idea to be generous and add "spare" pullups (i.e. use a lower value resistor) while keeping within the max count(6/9), as this will give extra safety margins and noise immunity at no extra cost.</p>
 </li>
 </ul>
 
@@ -5738,7 +5744,7 @@ added for length, BUT if number of pullups is TOO HIGH the only quick fix is to 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 22, 2025 17:19:11 UTC">August 22, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 22, 2025 20:38:24 UTC">August 22, 2025</span>
   </span>
 
     
