@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://dcc-ex.com/mkdocs-test/reference/nucleo/15-nucleo-144-power/">
+        <link rel="canonical" href="https://dcc-ex.com/mkdocs-test/reference/nucleo/11-nucleo-64-ex8874/">
       
       
-        <link rel="prev" href="../05-nucleo-debug/">
+        <link rel="prev" href="../08-nucleo-power/">
       
       
-        <link rel="next" href="../16-nucleo-144-ex8874/">
+        <link rel="next" href="../12-nucleo-64-wifi/">
       
       
         <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Nucleo - Power - DCC-EX Model Train Control, Animation, and Automation</title>
+        <title>Nucleo 64 - EX8874 - DCC-EX Model Train Control, Animation, and Automation</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nucleo-power" class="md-skip">
+        <a href="#nucleo-64-ex8874" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Nucleo - Power
+              Nucleo 64 - EX8874
             
           </span>
         </div>
@@ -5185,6 +5185,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -5292,6 +5296,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-nucleo-power/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Nucleo - Power
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -5309,7 +5336,7 @@
   
   
   <span class="md-ellipsis">
-    Nucleo - Power
+    Nucleo 64 - EX8874
     
   </span>
   
@@ -5322,7 +5349,7 @@
   
   
   <span class="md-ellipsis">
-    Nucleo - Power
+    Nucleo 64 - EX8874
     
   </span>
   
@@ -5345,27 +5372,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vin-from-ex8874" class="md-nav__link">
+  <a href="#one-ex8874-motor-shield" class="md-nav__link">
     <span class="md-ellipsis">
-      VIN from EX8874
+      One EX8874 motor shield
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#vin-voltage" class="md-nav__link">
+  <a href="#stacked-ex8874-motor-shields-on-f411re-f446re" class="md-nav__link">
     <span class="md-ellipsis">
-      VIN voltage
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usb" class="md-nav__link">
-    <span class="md-ellipsis">
-      USB
+      Stacked EX8874 motor shields on F411RE F446RE
     </span>
   </a>
   
@@ -5375,6 +5393,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-nucleo-64-wifi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Nucleo 64 - WiFi
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -6120,56 +6161,45 @@
   
 
 
-<h1 id="nucleo-power">Nucleo - Power<a class="headerlink" href="#nucleo-power" title="Permanent link">&para;</a></h1>
-<h2 id="vin-from-ex8874">VIN from EX8874<a class="headerlink" href="#vin-from-ex8874" title="Permanent link">&para;</a></h2>
+<h1 id="nucleo-64-ex8874">Nucleo 64 - EX8874<a class="headerlink" href="#nucleo-64-ex8874" title="Permanent link">&para;</a></h1>
+<h3 id="one-ex8874-motor-shield">One EX8874 motor shield<a class="headerlink" href="#one-ex8874-motor-shield" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Review of <strong>motor shield define</strong> from MotorDrivers.h for F411RE or F446RE  </li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="c1">// EX 8874 based shield connected to a 3V3 system with 12-bit (4096) ADC  </span>
+<span class="w">  </span><span class="cp">#define EX8874_SHIELD F(&quot;EX8874&quot;), \  </span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">MotorDriver</span><span class="p">(</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">UNUSED_PIN</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="n">A0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.27</span><span class="p">,</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span><span class="w"> </span><span class="n">A4</span><span class="p">),</span><span class="w"> </span><span class="err">\</span><span class="w">  </span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">MotorDriver</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">UNUSED_PIN</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="n">A1</span><span class="p">,</span><span class="w"> </span><span class="mf">1.27</span><span class="p">,</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span><span class="w"> </span><span class="n">A5</span><span class="p">)</span><span class="w">  </span>
+</code></pre></div>
+<ul>
+<li>One EX8874 motor shield would use the standard motor define EX8874_SHIELD.  No modifications are needed.</li>
+</ul>
+<h3 id="stacked-ex8874-motor-shields-on-f411re-f446re">Stacked EX8874 motor shields on F411RE F446RE<a class="headerlink" href="#stacked-ex8874-motor-shields-on-f411re-f446re" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
-<p>EX-MotorShield8874 provides VIN output, which can be used to power the Nucleo 64/144.  </p>
+<p>When using two EX8874 motor shields, the VIN on one shield can be used to power the Nucleo-144.<br />
+  Cut two traces to disable VIN on the stacked/second shield. &nbsp; <a href="../../hardware/motorboards/ex-8874/#steps-to-stack">Link to Hardware EX8874 page</a><br />
+&nbsp; &nbsp; &nbsp; &nbsp; <img align="right" alt="Stacked EX8874 Nucleo-144" src="../../../_static/images/nucleo/ex8874-f411re-f446re-stacked-pins.png" style="width: 55%" /></p>
 </li>
 <li>
-<p>In order to take advantage of the EX-MotorShield8874’s single power source capability, you will need to move the Nucleo power source jumper.  </p>
+<p>Tracks A and B can use the default pins as they would if only one shield was used.  </p>
 </li>
 <li>
-<p>On the Nucleo-64s it’s jumper JP5 which you move from the U5V position (pins 1+2 jumpered, USB 5V source being used) to the E5V position (pins 2+3 jumpered).  </p>
-</li>
-<li>
-<p>On the Nucleo-144s it’s jumper JP3 which you move from the U5V position (centre pins 3+4 jumpered, USB 5V source being used) to the VIN-5V position (rightmost pins 5+6 jumpered).  </p>
-</li>
-<li>
-<p>In both cases this will power your Nucleo using the EX-MotorShield8874’s onboard switch mode power supply of 7.2V to the VIN pin, and allows some 800mA of 5V power to be available for the Nucleo and peripherals.  </p>
-</li>
-<li>
-<p><strong>Note for programming</strong>: Once you do this it will mean you need both the EX-MotorShield8874 barrel jack to be powered AND the USB cable to enable programming. Or you can temporarily move JP5 back to U5V whilst uploading EX‑CommandStation.  </p>
-</li>
-<li>
-<p><strong>Power connection sequence</strong>: The correct sequence is power on the EX-MotorShield8874 barrel jack, then attach the USB cable according to the STMicroelectronics documentation.<br />
-  <br>
-  &nbsp;  &nbsp; <img alt="EX8874 Nucleo-144 pins" src="../../../_static/images/nucleo/vin-5v-power.jpg" style="width: 90%" /><br />
-  <br></p>
+<p>Tracks C and D can use the alternates for 8 pins.<br />
+  Short jumpers will be needed to connect the Fault pins.</p>
 </li>
 </ul>
-<h2 id="vin-voltage">VIN voltage<a class="headerlink" href="#vin-voltage" title="Permanent link">&para;</a></h2>
+<div style="clear: both;"></div>
 <ul>
-<li>Optimum VIN voltage is 7 volts.<br />
-  VIN range is from 7 V to 12 V only and input current capability is linked to input voltage:<br />
-  &nbsp;  &nbsp; 800 mA input current when Vin = 7 V<br />
-  &nbsp;  &nbsp; 450 mA input current when 7 V &lt; Vin &lt;= 9 V<br />
-  &nbsp;  &nbsp; 250 mA input current when 9 V &lt; Vin &lt;= 12 V</li>
+<li>A custom motor define will be needed in config.h</li>
 </ul>
-<h2 id="usb">USB<a class="headerlink" href="#usb" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>USB can be used for power, but accessory power will be limited.  </p>
-</li>
-<li>
-<p>Caution:  If VIN jumpers is not set to use USB - and - USB is connected prior to EX8874 being powered, expect enumeration issues and reduced power.  </p>
-</li>
-<li>
-<p>Refer to st.com user manuals<br />
-  &nbsp;  &nbsp; <a href="https://www.st.com/resource/en/user_manual/um1974-stm32-nucleo144-boards-mb1137-stmicroelectronics.pdf">UM1974 Nucleo-144</a><br />
-  &nbsp;  &nbsp; <a href="https://www.st.com/resource/en/user_manual/um1724-stm32-nucleo64-boards-mb1136-stmicroelectronics.pdf">UM1724 Nucleo-64</a></p>
-</li>
-</ul>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="cp">#define EX8874_SHIELDX2 F(&quot;EX8874_SHIELDX2&quot;), \  </span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">MotorDriver</span><span class="p">(</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="n">UNUSED_PIN</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="n">A0</span><span class="p">,</span><span class="w"> </span><span class="mf">1.27</span><span class="p">,</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span><span class="w"> </span><span class="n">A4</span><span class="p">),</span><span class="w"> </span><span class="err">\</span><span class="w">  </span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">MotorDriver</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="n">UNUSED_PIN</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w"> </span><span class="n">A1</span><span class="p">,</span><span class="w"> </span><span class="mf">1.27</span><span class="p">,</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span><span class="w"> </span><span class="n">A5</span><span class="p">),</span><span class="w"> </span><span class="err">\</span><span class="w">  </span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">MotorDriver</span><span class="p">(</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="n">UNUSED_PIN</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="n">A2</span><span class="p">,</span><span class="w"> </span><span class="mf">1.27</span><span class="p">,</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span><span class="w"> </span><span class="mi">28</span><span class="p">),</span><span class="w"> </span><span class="err">\</span><span class="w">  </span>
+<span class="w">    </span><span class="k">new</span><span class="w"> </span><span class="n">MotorDriver</span><span class="p">(</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">  </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="n">UNUSED_PIN</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="n">A3</span><span class="p">,</span><span class="w"> </span><span class="mf">1.27</span><span class="p">,</span><span class="w"> </span><span class="mi">5000</span><span class="p">,</span><span class="w"> </span><span class="mi">29</span><span class="p">)</span><span class="w">  </span>
+<span class="w">  </span><span class="cp">#define MOTOR_SHIELD_TYPE EX8874_SHIELDX2</span>
+</code></pre></div>
 
 
 
@@ -6190,7 +6220,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 5, 2025 05:38:43 UTC">August 5, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 28, 2025 23:23:36 UTC">September 28, 2025</span>
   </span>
 
     
@@ -6233,7 +6263,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
         
           
-          <a href="../05-nucleo-debug/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Nucleo - Debug">
+          <a href="../08-nucleo-power/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Nucleo - Power">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -6243,20 +6273,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Nucleo - Debug
+                Nucleo - Power
               </div>
             </div>
           </a>
         
         
           
-          <a href="../16-nucleo-144-ex8874/" class="md-footer__link md-footer__link--next" aria-label="Next: Nucleo 144 - EX8874">
+          <a href="../12-nucleo-64-wifi/" class="md-footer__link md-footer__link--next" aria-label="Next: Nucleo 64 - WiFi">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Nucleo 144 - EX8874
+                Nucleo 64 - WiFi
               </div>
             </div>
             <div class="md-footer__button md-icon">

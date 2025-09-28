@@ -5307,6 +5307,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -5417,12 +5421,58 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nucleo/15-nucleo-144-power/" class="md-nav__link">
+      <a href="../../../nucleo/08-nucleo-power/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Nucleo - Power
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nucleo/11-nucleo-64-ex8874/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Nucleo 64 - EX8874
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nucleo/12-nucleo-64-wifi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Nucleo 64 - WiFi
     
   </span>
   
@@ -6229,14 +6279,17 @@
 </ul>
 <p><img alt="vreg pad" src="../../../../_static/images/ex8874/vreg_enable_pad.png" /></p>
 <ul>
-<li>Cut the jumper pads for both Driver A and Driver B</li>
+<li>Cut the jumper pads for both Driver A and Driver B, except for the Fault pins.</li>
 </ul>
-<p><img alt="before" src="../../../../_static/images/ex8874/pin_assignment_pads_before.png" /></p>
+<p><img alt="before" src="../../../../_static/images/ex8874/pin-assignment-pads-before2.png" /></p>
 <ul>
 <li>Solder bridge the right hand ALT pads but <strong>NOT the FAULT pins</strong></li>
 </ul>
-<p><img alt="after" src="../../../../_static/images/ex8874/pin_assignment_pads_after.png" /></p>
-<p>The reason we did not solder the FAULT pins to their righthand ALT pads is that this would connect the FAULT pins to D0/D1 on the Arduino R3 headers which is not ideal because D0/D1 typically carry the serial port. You can of course bend those pins out if you wish to use them, and simply jumper them that way. Please refer to the self-build instructions for your processor type. </p>
+<p><img alt="after" src="../../../../_static/images/ex8874/pin-assignment-pads-after2.png" /></p>
+<p>The reason we did not solder the FAULT pins to their righthand ALT pads is that this would connect the FAULT pins to D0/D1 on the Arduino R3 headers which is not ideal because D0/D1 typically carry the serial port. You can of course bend those pins out if you wish to use them, and simply jumper them that way. Please refer to the self-build instructions for your processor type.</p>
+<p>Leaving the Fault pins on A4, A5 facilitates bending and jumpering them to nearby pins, such as<br />
+A6, A7 on Arduino Mega<br />
+PC2, PC3 on Nucleo-64</p>
 <p>After hardware installation, you will need to re-run the EX-Installer to configure the Command Station code to recognize the new board and allow you to control the third and fourth tracks.</p>
 
 
