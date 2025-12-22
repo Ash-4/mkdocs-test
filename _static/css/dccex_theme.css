@@ -113,7 +113,8 @@
   --md-default-bg-color--dark:  #222222; /* Slightly darker for deeper elements */
 
   /* Code blocks for dark mode */
-  --md-code-fg-color:           #E0E0E0; /* Code text colour */
+  /* --md-code-fg-color:           #E0E0E0; Code text colour */
+  --md-code-fg-color:           var(--md-code-hl-name-color);
   --md-code-bg-color:           #3D3D3D; /* Code block background */
 
   /* Code highlighting colour shades */
@@ -337,6 +338,28 @@
 .md-footer__link {
   margin-top: 1px;
   margin-bottom: 1px;
+}
+
+/* Reduce copyright size/padding */
+.md-copyright {
+  font-size: 0.5rem;
+  padding: 0;
+}
+
+/* Reduce Discord/social padding */
+.md-social {
+  padding: 0;
+}
+
+@media screen and (min-width: 45em) {
+  .md-social {
+    padding: 0;
+  }
+}
+
+/* Prevent Discord/social from wrapping under copyright */
+.md-footer-meta__inner {
+  flex-wrap: nowrap;
 }
 
 /* DCC-EX NEWS (BLOG) MODIFICATIONS */
