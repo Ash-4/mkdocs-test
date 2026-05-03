@@ -6,6 +6,7 @@ nav:
   - TrackManager: trackmanager
   - Command Station Internal Architecture: command-station-arch.md
   - Throttle Writers Guide: throttle-writers-guide.md
+  - EXRAIL Commands: ./products/ex-commandstation/exrail/command-list.md
   - Legacy Command Reference: legacy-command-reference.md
   - EX-CSB1: ex-csb1
   - ESP32: esp32
