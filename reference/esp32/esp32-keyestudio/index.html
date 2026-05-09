@@ -7393,7 +7393,7 @@
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Cover the barrel connector on Keyestudio IOT ESP32 PLUS Development Board, as VIN power will be provided by EX8874  </li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> IOREF Override set to 3v3  </li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Confirm that IOREF pin is bent <em>or</em> trace is cut <em>or</em> both</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> IOREF pin is bent <em>or</em> trace is cut <em>or</em> both</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Add the custom motor define - 4 lines in <code>config.h</code></li>
 </ul>
 <hr />
@@ -7402,20 +7402,44 @@
 <li>Reminder: No modifications are needed when stacking an EX8874 on an EX-CSB1 for 4 track outputs.</li>
 <li><strong>IOREF:</strong> The IOREF override is also needed for the top shield. See the <a href="../ioref-incorrect-voltage-fix_not_in_nav/">Incorrect IOREF voltage page</a> for details.</li>
 <li>
-<p><strong>VIN:</strong> Refer to instructions on <a href="../../../products/ex-motorshield8874/ex-motorshield8874/#steps-to-stack">cutting the VIN trace and disabling the regulator</a> for the top shield.</p>
+<p><strong>VIN:</strong> Refer to instructions on <a href="../../../products/ex-motorshield8874/ex-motorshield8874/#steps-to-stack">cutting the VIN trace and disabling the regulator</a> for the top EX8874. (See Option 1 below.)</p>
 </li>
 <li>
 <p>Stacking (2) motor shields on Keystudio ESP32 requires <strong><em>additional</em></strong> modification of the second/top shield:</p>
-<p>a. Cut the regulator to VIN pin on the top of the PCB</p>
-<p>b. Cut the “Regulator Enable” trace on the bottom of the board</p>
-<p>c. Use of solder pads for 8 alternate pins (not the <strong>Fault</strong> pins)</p>
-<p>d. Jumpers are required to connect <strong>Fault</strong> pins on the top EX8874 to <code>io2</code> and <code>io4</code> pins:<br />
-  &nbsp; &nbsp; - The pins on the ESP32 board labeled <code>io2</code> and <code>io4</code> can be bent about 45 degrees to accommodate jumpers.<br />
-  &nbsp; &nbsp; - Bend out pins A4 and A5 on the top EX8874.<br />
-  &nbsp; &nbsp; - Jumper <code>io2</code> to <code>A4</code> on the top EX8874.<br />
-  &nbsp; &nbsp; - Jumper <code>io4</code> to <code>A5</code> on the top EX8874.  </p>
+<ul>
+<li>
+<p>Disabling the VIN on the top EX8874</p>
+<ul>
+<li>
+<p><em>Option 1 - Cut the traces on the top EX8874</em></p>
+<ul>
+<li>Cut the regulator to VIN pin on the top of the PCB</li>
+<li>Cut the “Regulator Enable” trace on the bottom of the board</li>
+</ul>
+</li>
+<li>
+<p><em>Option 2 - bend the VIN pin</em></p>
+<ul>
+<li>Bend the VIN pin of the top EX8874 out so that it does not make contact with the lower EX8874</li>
+</ul>
 </li>
 </ul>
+</li>
+<li>
+<p>Use of solder pad for 8 alternate pins (not the fault pins)</p>
+</li>
+<li>For Fault pins, bend the A4 and A5 pins on the top motor shield, so that they do not contact the lower shield</li>
+<li>
+<p>^ Also for Fault pins, <code>io2</code> will need to be jumpered to <code>A4</code> on the EX8874. <code>io4</code> will need to be jumpered to <code>A5</code> on the EX8874.<br/>To do so, to avoid fouling with the EX8874, the pins on the ESP32 board labeled <code>io2</code> and <code>io4</code> will either;</p>
+<ul>
+<li>need to be bent about 45 degrees so that jumpers can be put on them, or</li>
+<li>use modified jumper cables with the plastic ends removed, bent and covered with heat shrink.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Bent jumper" src="../../../_static/images/esp32/esp32-keyestudio-bent-jumper.png" width="15%" /></p>
 <p>See the <a href="../../../products/ex-motorshield8874/ex-motorshield8874/#steps-to-stack">Stacking two motor shields on the EX8874 page</a> for details on how to alter the board for this combination.</p>
 <h3 id="first-ex8874">First EX8874<a class="headerlink" href="#first-ex8874" title="Permanent link">&para;</a></h3>
 <table>
@@ -7498,11 +7522,12 @@
 <h3 id="stacked-ex8874-checklist">Stacked EX8874 Checklist<a class="headerlink" href="#stacked-ex8874-checklist" title="Permanent link">&para;</a></h3>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Cover the barrel connector on Keyestudio IOT ESP32 PLUS Development Board, as VIN power will be provided by one EX8874  </li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> IOREF Override set to 3v3 on both EX8874 boards  </li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Confirm that IOREF pin is bent or trace is cut</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> VIN trace cut and regulator disabled on top EX8874  </li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Alternate pins enabled via solder pads  </li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Jumpers added for GPIO 2 and 4  </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> IOREF Override set to 3v3 on <strong>both</strong> EX8874 boards</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> IOREF pin is bent out <em>or</em> trace is cut on <strong>both</strong> EX8874 boards</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> VIN trace &amp; regulator cut <em>or</em> bend the VIN pin out on <strong>top</strong> EX8874</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Alternate pins enabled via solder pads on <strong>top</strong> EX8874</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> A4 and A5 pins on the <strong>top</strong> EX8874 bent out</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Jumpers added from GPIO 2 and 4 to A4 and A5 on <strong>top</strong> EX8874</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Add the custom motor define - 6 lines in config.h  </li>
 </ul>
 <p><mark>TODO</mark></p>
@@ -7526,7 +7551,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 5, 2026 22:51:37 UTC">May 5, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 9, 2026 14:46:22 UTC">May 9, 2026</span>
   </span>
 
     
