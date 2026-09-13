@@ -13,21 +13,21 @@
         <link rel="canonical" href="https://dcc-ex.com/mkdocs-test/reference/serial-commands/">
       
       
-        <link rel="prev" href="../serial-command-list/">
+        <link rel="prev" href="../throttle-writers/withrottle-vs-native-protocol/">
       
       
-        <link rel="next" href="../legacy-command-reference/">
+        <link rel="next" href="serial-command-list/">
       
       
         <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
         <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../_static/images/logos/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.6.14">
     
     
       
-        <title>DCC-EX Command Protocol - DCC-EX Model Train Control, Animation, and Automation</title>
+        <title>Overview - DCC-EX Model Train Control, Animation &amp; Automation</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dcc-ex-command-protocol-reference" class="md-skip">
+        <a href="#dcc-ex-serial-commands-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="DCC-EX Model Train Control, Animation, and Automation" class="md-header__button md-logo" aria-label="DCC-EX Model Train Control, Animation, and Automation" data-md-component="logo">
+    <a href="../.." title="DCC-EX Model Train Control, Animation &amp;amp; Automation" class="md-header__button md-logo" aria-label="DCC-EX Model Train Control, Animation &amp; Automation" data-md-component="logo">
       
   <img src="../../_static/images/logos/logo_with_border.png" alt="logo">
 
@@ -110,13 +110,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            DCC-EX Model Train Control, Animation, and Automation
+            DCC-EX Model Train Control, Animation &amp; Automation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DCC-EX Command Protocol
+              Overview
             
           </span>
         </div>
@@ -221,6 +221,8 @@
     <div class="md-container" data-md-component="container">
       
       
+  <!-- Retain the original theme tabs layout -->
+  
         
           
             
@@ -259,6 +261,8 @@
           
   
   
+    
+  
   Products
 
         </a>
@@ -278,6 +282,8 @@
         <a href="../../purchasing/official-sellers/" class="md-tabs__link">
           
   
+  
+    
   
   Purchase
 
@@ -299,6 +305,8 @@
           
   
   
+    
+  
   <small><small>or &nbsp;</small></small>Self Build
 
         </a>
@@ -319,7 +327,9 @@
           
   
   
-  Install
+    
+  
+  Install &amp; Configure
 
         </a>
       </li>
@@ -346,7 +356,9 @@
           
   
   
-  Use (Throttles)
+    
+  
+  Use<small><small>&nbsp;Throttles, etc.</small></small>
 
         </a>
       </li>
@@ -369,27 +381,9 @@
           
   
   
+    
+  
   Enhance
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../news/" class="md-tabs__link">
-          
-  
-  
-  News
 
         </a>
       </li>
@@ -408,6 +402,8 @@
         <a href="../../support/faq/" class="md-tabs__link">
           
   
+  
+    
   
   Support
 
@@ -431,6 +427,8 @@
           
   
   
+    
+  
   Reference
 
         </a>
@@ -451,7 +449,31 @@
           
   
   
+    
+  
   About Us
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../news/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  News
 
         </a>
       </li>
@@ -471,6 +493,8 @@
           
   
   
+    
+  
   Donate / Contribute
 
         </a>
@@ -485,6 +509,78 @@
           
         
       
+
+  <!-- Safely inject breadcrumbs directly under the top header navigation grid -->
+  
+    <!-- <div class="md-container"> -->
+      <div class="md-grid">
+        <nav class="md-breadcrumbs" aria-label="Breadcrumbs" style="margin-top: 15px; margin-bottom: 5px; display: block !important; visibility: visible !important;">
+  <ol class="md-breadcrumbs__list" style="display: flex; flex-wrap: wrap; list-style: none; padding: 0; margin: 0; gap: 8px; align-items: center;">
+    
+    <!-- Home Root Link -->
+    <li class="md-breadcrumbs__item" style="display: flex; align-items: center;">
+      <a href="https://dcc-ex.com/mkdocs-test/" class="md-breadcrumbs__link" style="color: var(--md-typeset-color); opacity: 0.7; text-decoration: none;">
+        Home
+      </a>
+    </li>
+
+    <!-- Safe loop through corrected structural directory ancestors -->
+    
+      
+        
+          <li class="md-breadcrumbs__item" style="display: flex; align-items: center;">
+            <span style="opacity: 0.35; color: var(--md-typeset-color); margin: 0 8px;">|</span>
+            
+            
+            
+            
+              
+            
+
+            
+              <a href="../toc/" class="md-breadcrumbs__link" style="color: var(--md-typeset-color); opacity: 0.7; text-decoration: none;">
+                Reference
+              </a>
+            
+          </li>
+        
+      
+        
+          <li class="md-breadcrumbs__item" style="display: flex; align-items: center;">
+            <span style="opacity: 0.35; color: var(--md-typeset-color); margin: 0 8px;">|</span>
+            
+            
+            
+            
+              
+            
+
+            
+              <a href="./" class="md-breadcrumbs__link" style="color: var(--md-typeset-color); opacity: 0.7; text-decoration: none;">
+                DCC-EX Serial/Native Commands
+              </a>
+            
+          </li>
+        
+      
+    
+
+    <!-- Current Document View Node -->
+    
+      <li class="md-breadcrumbs__item" style="display: flex; align-items: center; gap: 8px;">
+        <span style="opacity: 0.35; color: var(--md-typeset-color);">|</span>
+        <span class="md-breadcrumbs__link" style="color: var(--md-typeset-color); font-weight: 700;">
+          Overview
+        </span>
+      </li>
+    
+
+  </ol>
+</nav>
+      </div>
+    <!-- </div> -->
+  
+
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
@@ -503,12 +599,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="DCC-EX Model Train Control, Animation, and Automation" class="md-nav__button md-logo" aria-label="DCC-EX Model Train Control, Animation, and Automation" data-md-component="logo">
+    <a href="../.." title="DCC-EX Model Train Control, Animation &amp;amp; Automation" class="md-nav__button md-logo" aria-label="DCC-EX Model Train Control, Animation &amp; Automation" data-md-component="logo">
       
   <img src="../../_static/images/logos/logo_with_border.png" alt="logo">
 
     </a>
-    DCC-EX Model Train Control, Animation, and Automation
+    DCC-EX Model Train Control, Animation &amp; Automation
   </label>
   
     <div class="md-nav__source">
@@ -555,6 +651,32 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
     
     
       
@@ -568,8 +690,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/ex-dccinspector/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -578,8 +701,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
@@ -617,30 +746,33 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../products/getting-started/" class="md-nav__link">
+    
+    
+      
         
-  
-  
-  <span class="md-ellipsis">
-    Getting Started
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -652,50 +784,36 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/ex-commandstation/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
-    EX-CommandStation
+    EX-CommandStation<small><small> (Ready&nbsp;to&nbsp;Run &amp; Self&nbsp;Build)</small></small>
     
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
-            EX-CommandStation
+            EX-CommandStation<small><small> (Ready&nbsp;to&nbsp;Run &amp; Self&nbsp;Build)</small></small>
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../products/ex-commandstation/overview/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    EX-CommandStation Overview
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -733,7 +851,7 @@
   
   
   <span class="md-ellipsis">
-    Configuration <small>(config.h)</small>
+    Configuration <small><small>(config.h)</small></small>
     
   </span>
   
@@ -756,7 +874,7 @@
   
   
   <span class="md-ellipsis">
-    Configure WiFi <small>(Wifi Shield)</small>
+    Configure WiFi <small><small>(Wifi Shield)</small></small>
     
   </span>
   
@@ -779,7 +897,7 @@
   
   
   <span class="md-ellipsis">
-    Configure WiFi <small>(CSB1 & ESP32 v5.7.0+)</small>
+    Configure WiFi <small><small>(EX-CSB1 & ESP32 v5.7.0+)</small></small>
     
   </span>
   
@@ -821,6 +939,14 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+    
     
     
       
@@ -831,11 +957,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_7" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_7" id="__nav_2_3_7_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/ex-commandstation/trackmanager/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -844,37 +971,22 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_7" id="__nav_2_2_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_7">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_7">
             <span class="md-nav__icon md-icon"></span>
             TrackManager
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../products/ex-commandstation/trackmanager/trackmanager/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TrackManager
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -889,7 +1001,7 @@
   
   
   <span class="md-ellipsis">
-    Booster
+    DCC Booster Mode <small><small>(EX-CSB1)</small></small>
     
   </span>
   
@@ -916,6 +1028,24 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -926,11 +1056,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_8" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_8" id="__nav_2_3_8_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/ex-commandstation/loco-programming/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -939,37 +1070,22 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_8" id="__nav_2_2_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_8">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_8">
             <span class="md-nav__icon md-icon"></span>
             Loco Programming
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../products/ex-commandstation/loco-programming/programming/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Programming Overview
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -1149,6 +1265,22 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1159,11 +1291,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_10" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_10" id="__nav_2_3_10_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/ex-commandstation/accessories/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -1172,37 +1305,22 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_10" id="__nav_2_2_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_10">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_10">
             <span class="md-nav__icon md-icon"></span>
             Accessories
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../products/ex-commandstation/accessories/accessories/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Accessories
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -1305,6 +1423,22 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1315,10 +1449,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_10_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_10_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_10_6" id="__nav_2_3_10_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2_10_6" id="__nav_2_2_10_6_label" tabindex="0">
             
   
   
@@ -1331,8 +1465,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_10_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_10_6">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_10_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_10_6">
             <span class="md-nav__icon md-icon"></span>
             I2C (I<sup>2</sup>C)
           </label>
@@ -1484,6 +1618,12 @@
   
     
     
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1494,10 +1634,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_10_6_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_10_6_7" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_10_6_7" id="__nav_2_3_10_6_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2_10_6_7" id="__nav_2_2_10_6_7_label" tabindex="0">
             
   
   
@@ -1510,8 +1650,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_3_10_6_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_10_6_7">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_2_10_6_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_10_6_7">
             <span class="md-nav__icon md-icon"></span>
             Various Devices
           </label>
@@ -1525,6 +1665,20 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1535,11 +1689,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_10_6_7_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_10_6_7_1" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_10_6_7_1" id="__nav_2_3_10_6_7_1_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/ex-commandstation/accessories/various-devices/sounds/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -1548,37 +1703,22 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_10_6_7_1" id="__nav_2_2_10_6_7_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="6" aria-labelledby="__nav_2_3_10_6_7_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_10_6_7_1">
+        <nav class="md-nav" data-md-level="6" aria-labelledby="__nav_2_2_10_6_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_10_6_7_1">
             <span class="md-nav__icon md-icon"></span>
             Sounds
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../products/ex-commandstation/accessories/various-devices/sounds/sounds/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Sounds
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -1736,6 +1876,22 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1746,11 +1902,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_11" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_11" id="__nav_2_3_11_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/ex-commandstation/exrail/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -1759,37 +1916,22 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_11" id="__nav_2_2_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_11">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_11">
             <span class="md-nav__icon md-icon"></span>
             EXRAIL
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../products/ex-commandstation/exrail/exrail/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    What is EXRAIL?
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -1892,6 +2034,46 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -1902,11 +2084,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_11_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_11_6" id="__nav_2_3_11_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/ex-commandstation/exrail/cookbooks/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -1915,38 +2098,23 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_11_6" id="__nav_2_2_11_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_11_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_11_6">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_11_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_11_6">
             <span class="md-nav__icon md-icon"></span>
             Cookbooks
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../products/ex-commandstation/exrail/cookbooks/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Cookbooks
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -1955,6 +2123,20 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1966,10 +2148,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_6_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_11_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_11_6_2" id="__nav_2_3_11_6_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2_11_6_2" id="__nav_2_2_11_6_2_label" tabindex="0">
             
   
   
@@ -1982,8 +2164,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_3_11_6_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_11_6_2">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_2_11_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_11_6_2">
             <span class="md-nav__icon md-icon"></span>
             Editing Tips & tricks
           </label>
@@ -2281,6 +2463,20 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -2291,10 +2487,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_6_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_11_6_9" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_11_6_9" id="__nav_2_3_11_6_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2_11_6_9" id="__nav_2_2_11_6_9_label" tabindex="0">
             
   
   
@@ -2307,8 +2503,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_3_11_6_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_11_6_9">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_2_11_6_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_11_6_9">
             <span class="md-nav__icon md-icon"></span>
             Advanced
           </label>
@@ -2468,6 +2664,26 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -2478,11 +2694,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_6_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_11_6_10" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_11_6_10" id="__nav_2_3_11_6_10_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/ex-commandstation/exrail/cookbooks/big-picture/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2491,37 +2708,22 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_11_6_10" id="__nav_2_2_11_6_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_3_11_6_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_11_6_10">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_2_11_6_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_11_6_10">
             <span class="md-nav__icon md-icon"></span>
             Big picture
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../products/ex-commandstation/exrail/cookbooks/big-picture/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Big Picture EXRAIL Examples
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -2701,6 +2903,28 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -2711,10 +2935,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_6_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_11_6_11" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_11_6_11" id="__nav_2_3_11_6_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2_11_6_11" id="__nav_2_2_11_6_11_label" tabindex="0">
             
   
   
@@ -2727,8 +2951,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_3_11_6_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_11_6_11">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_2_11_6_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_11_6_11">
             <span class="md-nav__icon md-icon"></span>
             Driving trains
           </label>
@@ -2980,6 +3204,14 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -2990,10 +3222,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_6_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_11_6_12" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_11_6_12" id="__nav_2_3_11_6_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2_11_6_12" id="__nav_2_2_11_6_12_label" tabindex="0">
             
   
   
@@ -3006,8 +3238,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_3_11_6_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_11_6_12">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_2_11_6_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_11_6_12">
             <span class="md-nav__icon md-icon"></span>
             Flags and latches
           </label>
@@ -3098,6 +3330,14 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+    
     
     
       
@@ -3108,11 +3348,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_6_13" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_11_6_13" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_11_6_13" id="__nav_2_3_11_6_13_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/ex-commandstation/exrail/cookbooks/neopixels/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -3121,37 +3362,22 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_11_6_13" id="__nav_2_2_11_6_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_3_11_6_13_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_11_6_13">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_2_11_6_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_11_6_13">
             <span class="md-nav__icon md-icon"></span>
             Neopixels
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../products/ex-commandstation/exrail/cookbooks/neopixels/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    NeoPixel support
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -3193,6 +3419,22 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -3203,11 +3445,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_6_14" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_11_6_14" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_11_6_14" id="__nav_2_3_11_6_14_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/ex-commandstation/exrail/cookbooks/signals/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -3216,37 +3459,22 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_11_6_14" id="__nav_2_2_11_6_14_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_3_11_6_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_11_6_14">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_2_11_6_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_11_6_14">
             <span class="md-nav__icon md-icon"></span>
             Signals
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../products/ex-commandstation/exrail/cookbooks/signals/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Signal basics
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -3380,6 +3608,10 @@
   
     
     
+      
+        
+      
+    
     
     
       
@@ -3390,10 +3622,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_6_15" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_11_6_15" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_11_6_15" id="__nav_2_3_11_6_15_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2_11_6_15" id="__nav_2_2_11_6_15_label" tabindex="0">
             
   
   
@@ -3406,8 +3638,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_3_11_6_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_11_6_15">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_2_11_6_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_11_6_15">
             <span class="md-nav__icon md-icon"></span>
             Sounds
           </label>
@@ -3452,6 +3684,14 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -3462,10 +3702,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_6_16" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_11_6_16" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_11_6_16" id="__nav_2_3_11_6_16_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2_11_6_16" id="__nav_2_2_11_6_16_label" tabindex="0">
             
   
   
@@ -3478,8 +3718,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_3_11_6_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_11_6_16">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_2_11_6_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_11_6_16">
             <span class="md-nav__icon md-icon"></span>
             Startup
           </label>
@@ -3570,6 +3810,20 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -3580,10 +3834,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_6_17" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_11_6_17" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_11_6_17" id="__nav_2_3_11_6_17_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2_11_6_17" id="__nav_2_2_11_6_17_label" tabindex="0">
             
   
   
@@ -3596,8 +3850,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_3_11_6_17_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_11_6_17">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_2_11_6_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_11_6_17">
             <span class="md-nav__icon md-icon"></span>
             Turnouts
           </label>
@@ -3757,6 +4011,22 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -3767,10 +4037,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_11_6_18" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_11_6_18" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_11_6_18" id="__nav_2_3_11_6_18_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2_11_6_18" id="__nav_2_2_11_6_18_label" tabindex="0">
             
   
   
@@ -3783,8 +4053,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_3_11_6_18_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_11_6_18">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_2_11_6_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_11_6_18">
             <span class="md-nav__icon md-icon"></span>
             Various devices
           </label>
@@ -3995,7 +4265,7 @@
   
   
   <span class="md-ellipsis">
-    EX-MotorShield8874
+    <br/>EX-MotorShield8874
     
   </span>
   
@@ -4041,7 +4311,7 @@
   
   
   <span class="md-ellipsis">
-    EX-WebThrottle
+    <br/>EX-WebThrottle
     
   </span>
   
@@ -4059,6 +4329,18 @@
   
   
     
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -4070,11 +4352,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/ex-toolbox/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -4083,37 +4366,22 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             EX-Toolbox
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../products/ex-toolbox/ex-toolbox/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    EX-Toolbox Overview
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -4201,6 +4469,24 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -4211,50 +4497,36 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
         
           
-          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/ex-fastclock/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
-    EX-FastClock<small><small> (DIY)</small></small>
+    <br/>EX-FastClock<small><small> (DIY)</small></small>
     
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
             <span class="md-nav__icon md-icon"></span>
-            EX-FastClock<small><small> (DIY)</small></small>
+            <br/>EX-FastClock<small><small> (DIY)</small></small>
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../products/ex-fastclock/overview/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    EX-FastClock Overview
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -4434,6 +4706,26 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -4444,11 +4736,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
         
           
-          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../products/ex-turntable/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -4457,37 +4750,22 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_10">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
             <span class="md-nav__icon md-icon"></span>
             EX-Turntable<small><small> (DIY)</small></small>
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../products/ex-turntable/overview/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    EX-Turntable Overview
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -4667,6 +4945,18 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -4677,10 +4967,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
         
           
-          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
             
   
   
@@ -4693,8 +4983,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
             <span class="md-nav__icon md-icon"></span>
             EX-SensorCAM<small><small> (DIY)</small></small>
           </label>
@@ -4824,27 +5114,6 @@
               
             
               
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../products/ex-dccinspector/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    DCC Inspector<small><small> (DIY)</small></small>
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
           </ul>
         </nav>
@@ -4860,6 +5129,20 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -4963,6 +5246,75 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../purchasing/next-steps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <br/><i>EX-CSB1 Next Steps</i><br/>Test&nbsp;Your&nbsp;EX-CSB1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../purchasing/physical-installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Connecting to Your Layout<small><small> (Physical&nbsp;Connection)</small></small>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../purchasing/throttles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Throttles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -4977,6 +5329,28 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -5024,29 +5398,6 @@
   
   <span class="md-ellipsis">
     Build Your Own
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../diy/power/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Selecting a Power Supply
     
   </span>
   
@@ -5156,12 +5507,35 @@
   
   
     <li class="md-nav__item">
+      <a href="../../diy/power/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Selecting a Power Supply
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../diy/wifi/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Optional WiFi
+    <br/>Optional WiFi
     
   </span>
   
@@ -5207,7 +5581,7 @@
   
   
   <span class="md-ellipsis">
-    Installing Software
+    <br/><i>Next Steps</i> - Install &amp; Configure
     
   </span>
   
@@ -5230,7 +5604,7 @@
   
   
   <span class="md-ellipsis">
-    Other Devices
+    <br/>Other Devices
     
   </span>
   
@@ -5256,6 +5630,34 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -5274,7 +5676,7 @@
   
   
   <span class="md-ellipsis">
-    Install
+    Install &amp; Configure
     
   </span>
   
@@ -5285,7 +5687,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Install
+            Install &amp; Configure
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5301,7 +5703,7 @@
   
   
   <span class="md-ellipsis">
-    EX-Installer
+    EX-Installer<small><small> (Install &amp; Configure)</small></small>
     
   </span>
   
@@ -5435,6 +5837,18 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -5448,8 +5862,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" >
         
           
-          <label class="md-nav__link" for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../installer/download/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -5458,8 +5873,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_7">
@@ -5469,13 +5890,15 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
+            
+              
                 
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../installer/download-linux/" class="md-nav__link">
+      <a href="../../installer/download/download-linux/" class="md-nav__link">
         
   
   
@@ -5498,7 +5921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installer/download-mac/" class="md-nav__link">
+      <a href="../../installer/download/download-mac/" class="md-nav__link">
         
   
   
@@ -5521,7 +5944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installer/download-win/" class="md-nav__link">
+      <a href="../../installer/download/download-win/" class="md-nav__link">
         
   
   
@@ -5540,6 +5963,29 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installer/config-wifi-esp32/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <br/>Configure WiFi <small><small>(EX&#8209;CSB1&nbsp;&amp;&nbsp;ESP32&nbsp;v5.7.0+&nbsp;Only)</small></small>
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -5575,12 +6021,81 @@
   
   
     <li class="md-nav__item">
+      <a href="../../installer/manage-config-files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <br/>Manage Config files<small><small> <br/>Saving&nbsp;&amp;&nbsp;Restoring</small></small>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installer/physical-installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <br/>Connecting to Your Layout<small><small> (Physical&nbsp;Connection)</small></small>
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installer/next-steps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <br/><i>Next Steps</i> - Throttles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../installer/platformio/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Advanced Users - VSC/PlatformIO
+    <br/>Advanced Users - VSC/PlatformIO
     
   </span>
   
@@ -5606,6 +6121,20 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -5624,7 +6153,7 @@
   
   
   <span class="md-ellipsis">
-    Use (Throttles)
+    Use<small><small>&nbsp;Throttles, etc.</small></small>
     
   </span>
   
@@ -5635,7 +6164,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Use (Throttles)
+            Use<small><small>&nbsp;Throttles, etc.</small></small>
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5646,6 +6175,14 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -5710,6 +6247,14 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -5859,12 +6404,104 @@
   
   
     <li class="md-nav__item">
+      <a href="../../throttles/connecting-wifi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    <br/>How to Connect - WiFi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../throttles/connecting-usb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to Connect - USB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../throttles/cv-programming/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Loco/CV Programming
+    <br/>Loco/CV Programming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../throttles/dcc-accessories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DCC Accessory Operation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../throttles/dc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Controlling DC Locos
     
   </span>
   
@@ -5889,6 +6526,20 @@
   
   
     
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -5903,8 +6554,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../enhance/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -5913,8 +6565,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
@@ -5924,18 +6582,89 @@
           <ul class="md-nav__list" data-md-scrollfix>
             
               
+            
+              
                 
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../enhance/" class="md-nav__link">
+      <a href="../../enhance/rosters/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Enhancing your EX-CommandStation
+    Adding a Roster
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enhance/turnouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adding Turnouts/Points
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enhance/routes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adding Routes and Automations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enhance/trackmanager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TrackManager - DC and DCC Operation
     
   </span>
   
@@ -5960,6 +6689,16 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -5979,7 +6718,7 @@
   
   
   <span class="md-ellipsis">
-    News
+    Support
     
   </span>
   
@@ -5989,153 +6728,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            News
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    
-  
-  
-    <li class="md-nav__item">
-      <a href="../../news/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    DCC-EX News
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Categories
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_2">
-            <span class="md-nav__icon md-icon"></span>
-            Categories
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    
-  
-  
-    <li class="md-nav__item">
-      <a href="../../news/category/general-dcc-ex-news/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    General DCC-EX News
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Support
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Support
           </label>
@@ -6250,6 +6842,32 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -6263,10 +6881,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
             
   
   
@@ -6279,8 +6897,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_10">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Reference
           </label>
@@ -6336,362 +6954,20 @@
                 
   
   
-    
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_10_3" id="__nav_10_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Serial/Native Commands
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_10_3">
-            <span class="md-nav__icon md-icon"></span>
-            Serial/Native Commands
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../serial-command-basics/" class="md-nav__link">
+      <a href="../advanced-config-h/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Serial Command Basics
+    <br/>Advanced config.h Options
     
   </span>
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../serial-command-list/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    DCC-EX Command List
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    DCC-EX Command Protocol
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    DCC-EX Command Protocol
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#system-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      System Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#power-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Power Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#locomotive-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Locomotive Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#function-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Function Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consist-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Consist Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#turnoutpoint-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Turnout/Point Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sensor-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sensor Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cv-programming" class="md-nav__link">
-    <span class="md-ellipsis">
-      CV Programming
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dcc-accessory-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      DCC Accessory Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#momentum-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Momentum Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pin-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pin Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#neopixel-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      NeoPixel Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#turntable-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Turntable Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sound-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sound Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#throttle-information-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Throttle Information Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#track-manager" class="md-nav__link">
-    <span class="md-ellipsis">
-      Track Manager
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#diagnostic-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagnostic Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#raw-dcc-packets" class="md-nav__link">
-    <span class="md-ellipsis">
-      Raw DCC Packets
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../legacy-command-reference/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Legacy Command Reference
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -6726,30 +7002,21 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../advanced-config-h/" class="md-nav__link">
+    
+    
+      
         
-  
-  
-  <span class="md-ellipsis">
-    Advanced config.h Options
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -6761,28 +7028,37 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_5" >
         
           
-          <label class="md-nav__link" for="__nav_10_6" id="__nav_10_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../trackmanager/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
-    TrackManager
+    <br/>TrackManager
     
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9_5" id="__nav_9_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_5">
             <span class="md-nav__icon md-icon"></span>
-            TrackManager
+            <br/>TrackManager
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -6791,12 +7067,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../trackmanager/trackmanager/" class="md-nav__link">
+      <a href="../trackmanager/dcc-vs-dc/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TrackManager
+    DCC VS DC
     
   </span>
   
@@ -6890,53 +7166,21 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../command-station-arch/" class="md-nav__link">
+    
+    
+      
         
-  
-  
-  <span class="md-ellipsis">
-    Command Station Internal Architecture
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../throttle-writers-guide/" class="md-nav__link">
+          
         
-  
-  
-  <span class="md-ellipsis">
-    Throttle Writers Guide
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -6948,36 +7192,51 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_6" >
         
           
-          <label class="md-nav__link" for="__nav_10_9" id="__nav_10_9_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../microcontrollers/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
-    Alternate Microcontrollers
+    <br/>Alternate Microcontrollers
     
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9_6" id="__nav_9_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_9">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_6">
             <span class="md-nav__icon md-icon"></span>
-            Alternate Microcontrollers
+            <br/>Alternate Microcontrollers
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
               
+            
+              
                 
   
   
   
   
     
+    
+      
+        
+      
+        
+      
     
     
     
@@ -6989,10 +7248,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_9_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_10_9_1" id="__nav_10_9_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9_6_2" id="__nav_9_6_2_label" tabindex="0">
             
   
   
@@ -7005,8 +7264,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_10_9_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_9_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_6_2">
             <span class="md-nav__icon md-icon"></span>
             EX-CSB1
           </label>
@@ -7019,7 +7278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ex-csb1/csb1-errors-faq/" class="md-nav__link">
+      <a href="../microcontrollers/ex-csb1/csb1-errors-faq/" class="md-nav__link">
         
   
   
@@ -7042,7 +7301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ex-csb1/csb1-technical/" class="md-nav__link">
+      <a href="../microcontrollers/ex-csb1/csb1-technical/" class="md-nav__link">
         
   
   
@@ -7072,7 +7331,40 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../microcontrollers/arduino-mega/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arduino Mega
     
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -7084,10 +7376,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_9_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_6_4" >
         
           
-          <label class="md-nav__link" for="__nav_10_9_2" id="__nav_10_9_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9_6_4" id="__nav_9_6_4_label" tabindex="0">
             
   
   
@@ -7100,8 +7392,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_10_9_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_9_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_6_4">
             <span class="md-nav__icon md-icon"></span>
             ESP32
           </label>
@@ -7114,7 +7406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../esp32/esp32-ex8874/" class="md-nav__link">
+      <a href="../microcontrollers/esp32/esp32-ex8874/" class="md-nav__link">
         
   
   
@@ -7137,7 +7429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../esp32/esp32-acebott/" class="md-nav__link">
+      <a href="../microcontrollers/esp32/esp32-acebott/" class="md-nav__link">
         
   
   
@@ -7160,7 +7452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../esp32/esp32-keyestudio/" class="md-nav__link">
+      <a href="../microcontrollers/esp32/esp32-keyestudio/" class="md-nav__link">
         
   
   
@@ -7183,7 +7475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../esp32/esp32-l298-shield/" class="md-nav__link">
+      <a href="../microcontrollers/esp32/esp32-l298-shield/" class="md-nav__link">
         
   
   
@@ -7215,6 +7507,26 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -7225,10 +7537,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_9_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_6_5" >
         
           
-          <label class="md-nav__link" for="__nav_10_9_3" id="__nav_10_9_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9_6_5" id="__nav_9_6_5_label" tabindex="0">
             
   
   
@@ -7241,8 +7553,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_10_9_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_9_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_6_5">
             <span class="md-nav__icon md-icon"></span>
             Nucleo
           </label>
@@ -7255,7 +7567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nucleo/nucleo-drivers/" class="md-nav__link">
+      <a href="../microcontrollers/nucleo/nucleo-drivers/" class="md-nav__link">
         
   
   
@@ -7278,7 +7590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nucleo/nucleo-firmware/" class="md-nav__link">
+      <a href="../microcontrollers/nucleo/nucleo-firmware/" class="md-nav__link">
         
   
   
@@ -7301,7 +7613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nucleo/nucleo-debug/" class="md-nav__link">
+      <a href="../microcontrollers/nucleo/nucleo-debug/" class="md-nav__link">
         
   
   
@@ -7324,7 +7636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nucleo/nucleo-power/" class="md-nav__link">
+      <a href="../microcontrollers/nucleo/nucleo-power/" class="md-nav__link">
         
   
   
@@ -7347,7 +7659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nucleo/nucleo-64-ex8874/" class="md-nav__link">
+      <a href="../microcontrollers/nucleo/nucleo-64-ex8874/" class="md-nav__link">
         
   
   
@@ -7370,7 +7682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nucleo/nucleo-64-wifi/" class="md-nav__link">
+      <a href="../microcontrollers/nucleo/nucleo-64-wifi/" class="md-nav__link">
         
   
   
@@ -7393,7 +7705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nucleo/nucleo-144-ex8874/" class="md-nav__link">
+      <a href="../microcontrollers/nucleo/nucleo-144-ex8874/" class="md-nav__link">
         
   
   
@@ -7416,7 +7728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nucleo/nucleo-144-wifi/" class="md-nav__link">
+      <a href="../microcontrollers/nucleo/nucleo-144-wifi/" class="md-nav__link">
         
   
   
@@ -7439,7 +7751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nucleo/nucleo-144-pin-reference/" class="md-nav__link">
+      <a href="../microcontrollers/nucleo/nucleo-144-pin-reference/" class="md-nav__link">
         
   
   
@@ -7479,6 +7791,20 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -7489,10 +7815,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_7" >
         
           
-          <label class="md-nav__link" for="__nav_10_10" id="__nav_10_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9_7" id="__nav_9_7_label" tabindex="0">
             
   
   
@@ -7505,8 +7831,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_10">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_7">
             <span class="md-nav__icon md-icon"></span>
             Other Hardware
           </label>
@@ -7543,6 +7869,12 @@
   
     
     
+      
+        
+          
+        
+      
+    
     
     
       
@@ -7553,11 +7885,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_10_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_7_2" >
         
           
-          <label class="md-nav__link" for="__nav_10_10_2" id="__nav_10_10_2_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../hardware/bluetooth-devices/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -7566,37 +7899,17 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_10_10_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_10_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_7_2">
             <span class="md-nav__icon md-icon"></span>
             Bluetooth devices
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hardware/bluetooth-devices/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Bluetooth Devices
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
           </ul>
@@ -7615,6 +7928,12 @@
   
     
     
+      
+        
+          
+        
+      
+    
     
     
       
@@ -7625,11 +7944,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_10_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_7_3" >
         
           
-          <label class="md-nav__link" for="__nav_10_10_3" id="__nav_10_10_3_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../hardware/ethernet-boards/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -7638,37 +7958,17 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_10_10_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_10_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_7_3">
             <span class="md-nav__icon md-icon"></span>
             Ethernet boards
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hardware/ethernet-boards/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Ethernet Boards
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
           </ul>
@@ -7687,6 +7987,14 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -7697,10 +8005,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_10_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_7_4" >
         
           
-          <label class="md-nav__link" for="__nav_10_10_4" id="__nav_10_10_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9_7_4" id="__nav_9_7_4_label" tabindex="0">
             
   
   
@@ -7713,8 +8021,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_10_10_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_10_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_7_4">
             <span class="md-nav__icon md-icon"></span>
             Hal
           </label>
@@ -7805,6 +8113,12 @@
   
     
     
+      
+        
+      
+        
+      
+    
     
     
       
@@ -7815,10 +8129,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_10_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_7_5" >
         
           
-          <label class="md-nav__link" for="__nav_10_10_5" id="__nav_10_10_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9_7_5" id="__nav_9_7_5_label" tabindex="0">
             
   
   
@@ -7831,8 +8145,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_10_10_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_10_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_7_5">
             <span class="md-nav__icon md-icon"></span>
             Motorboards
           </label>
@@ -7900,6 +8214,12 @@
   
     
     
+      
+        
+          
+        
+      
+    
     
     
       
@@ -7910,11 +8230,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_10_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_7_6" >
         
           
-          <label class="md-nav__link" for="__nav_10_10_6" id="__nav_10_10_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../hardware/wifi-boards/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -7923,62 +8244,46 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_10_10_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_10_6">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_7_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_7_6">
             <span class="md-nav__icon md-icon"></span>
             Wifi boards
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
               
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
                 
   
   
   
   
-    <li class="md-nav__item">
-      <a href="../hardware/wifi-boards/" class="md-nav__link">
+    
+    
+      
         
-  
-  
-  <span class="md-ellipsis">
-    WiFi Boards
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
     
     
     
@@ -7990,10 +8295,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_8" >
         
           
-          <label class="md-nav__link" for="__nav_10_11" id="__nav_10_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9_8" id="__nav_9_8_label" tabindex="0">
             
   
   
@@ -8006,8 +8311,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_8">
             <span class="md-nav__icon md-icon"></span>
             Wiring
           </label>
@@ -8021,6 +8326,12 @@
   
     
     
+      
+        
+      
+        
+      
+    
     
     
       
@@ -8031,10 +8342,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_11_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_8_1" >
         
           
-          <label class="md-nav__link" for="__nav_10_11_1" id="__nav_10_11_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9_8_1" id="__nav_9_8_1_label" tabindex="0">
             
   
   
@@ -8047,8 +8358,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_10_11_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_11_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_8_1">
             <span class="md-nav__icon md-icon"></span>
             i2C
           </label>
@@ -8124,6 +8435,20 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -8134,28 +8459,37 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_9" >
         
           
-          <label class="md-nav__link" for="__nav_10_12" id="__nav_10_12_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../throttle-writers/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
-    <i>External References</i>
+    <br/>Throttle Developers
     
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9_9" id="__nav_9_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10_12">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_9">
             <span class="md-nav__icon md-icon"></span>
-            <i>External References</i>
+            <br/>Throttle Developers
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -8164,12 +8498,81 @@
   
   
     <li class="md-nav__item">
-      <a href="../technical-references/" class="md-nav__link">
+      <a href="../throttle-writers/throttle-writers-guide/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Standards & Technical References
+    Throttle Writers Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../throttle-writers/native-protocol-library/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Native Protocol Library
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../throttle-writers/withrottle-protocol-library/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WiThrottle Protocol Library
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../throttle-writers/withrottle-vs-native-protocol/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WiThrottle VS Native Protocol
     
   </span>
   
@@ -8188,6 +8591,345 @@
 
               
             
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_10" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  
+  <span class="md-ellipsis">
+    DCC-EX Serial/Native Commands
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_9_10" id="__nav_9_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9_10">
+            <span class="md-nav__icon md-icon"></span>
+            DCC-EX Serial/Native Commands
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="serial-command-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Command List
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="serial-commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Commands by Function Group
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="legacy-command-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Legacy Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../command-station-architecture/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Command Station Internal Architecture
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9_11" id="__nav_9_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_11">
+            <span class="md-nav__icon md-icon"></span>
+            Command Station Internal Architecture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../command-station-architecture/hal-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HAL Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../command-station-architecture/writing-hal-drivers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HAL Writer's Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../command-station-architecture/io-device-drivers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    I/O Device Drivers and HAL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_12" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../external-references/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    <i>External References</i>
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_12">
+            <span class="md-nav__icon md-icon"></span>
+            <i>External References</i>
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -8203,6 +8945,14 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -8213,10 +8963,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
           
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
             
   
   
@@ -8229,8 +8979,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             About Us
           </label>
@@ -8319,6 +9069,165 @@
   
   
     
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../news/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    News
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_11" id="__nav_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            News
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_2" id="__nav_11_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Categories
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_2">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../news/category/general-dcc-ex-news/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    General DCC-EX News
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -8430,6 +9339,24 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -8443,8 +9370,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_4" >
         
           
-          <label class="md-nav__link" for="__nav_12_4" id="__nav_12_4_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../contributing/documentation/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -8453,8 +9381,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_12_4" id="__nav_12_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12_4">
@@ -8463,27 +9397,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../contributing/documentation/docs/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Contributing to Documentation
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -8737,180 +9650,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#system-commands" class="md-nav__link">
+  <a href="#conventions-used-for-command-descriptions" class="md-nav__link">
     <span class="md-ellipsis">
-      System Commands
+      Conventions used for command descriptions
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#power-control" class="md-nav__link">
+  <a href="#common-elements-parameters" class="md-nav__link">
     <span class="md-ellipsis">
-      Power Control
+      Common Elements / Parameters
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#locomotive-control" class="md-nav__link">
+  <a href="#notes" class="md-nav__link">
     <span class="md-ellipsis">
-      Locomotive Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#function-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Function Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consist-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Consist Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#turnoutpoint-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Turnout/Point Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sensor-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sensor Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cv-programming" class="md-nav__link">
-    <span class="md-ellipsis">
-      CV Programming
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dcc-accessory-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      DCC Accessory Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#momentum-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Momentum Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pin-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pin Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#neopixel-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      NeoPixel Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#turntable-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Turntable Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sound-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sound Control
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#throttle-information-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Throttle Information Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#track-manager" class="md-nav__link">
-    <span class="md-ellipsis">
-      Track Manager
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#diagnostic-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagnostic Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#raw-dcc-packets" class="md-nav__link">
-    <span class="md-ellipsis">
-      Raw DCC Packets
+      Notes
     </span>
   </a>
   
@@ -8937,1190 +9697,66 @@
   
 
 
-<h1 id="dcc-ex-command-protocol-reference">DCC-EX Command Protocol Reference<a class="headerlink" href="#dcc-ex-command-protocol-reference" title="Permanent link">&para;</a></h1>
-<p>Complete reference guide for serial commands used with DCC command stations.</p>
-<p>How to understand the syntax:</p>
+<h1 id="dcc-ex-serial-commands-overview">DCC-EX Serial Commands Overview<a class="headerlink" href="#dcc-ex-serial-commands-overview" title="Permanent link">&para;</a></h1>
 <ul>
-<li>The first symbol after the <code>&lt;</code> character is the opcode. It's case sensitive so <code>&lt;F</code> is not the same as <code>&lt;f</code>.</li>
-<li>parameters in UPPER CASE (eg LIMIT) are keywords and form part of the command. Keywords are not case sensitive.</li>
-<li>parameters in lower case (eg speed) are values you must supply</li>
-<li>parameters in [square brackets] are optional (e.g. [volume]). Do not include the brackets in your command.</li>
+<li>Serial commands are accepted as input from the USB serial connection or a TCP/IP connection.</li>
+<li>Commands have a single case dependent character opcode and optionally parameters.</li>
+<li>Keyword parameters are shown in upper case but may be entered in mixed case.</li>
+<li>Value parameters are decimal numeric (unless otherwise noted)</li>
+<li>Not all commands have a response, and broadcasts mean that not all responses come from the last commands that you have issued.</li>
+<li>Commands entered like <code>&lt;JA&gt;</code> are actually read as <code>&lt;J A&gt;</code>, so <code>&lt;Ja&gt;</code> is also acceptable.</li>
+<li>Commands that produce diagnostic information (which is intended for human reading rather than code) only write to the USB Serial output.</li>
+<li>Commands that cause state changes (such as loco speeds, turnout position) cause broadcasts to all serial connections and, where appropriate, WiThrottle protocol connections.</li>
 </ul>
-<h2 id="system-commands">System Commands<a class="headerlink" href="#system-commands" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;#&gt;</code></td>
-<td>Request number of simultaneously supported locos</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;!&gt;</code></td>
-<td>Emergency stop all locos</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;!P&gt;</code></td>
-<td>Emergency stop and PAUSE loco movement</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;!R&gt;</code></td>
-<td>Resume after <code>&lt;!P&gt;</code></td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;s&gt;</code></td>
-<td>Command station status</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;E&gt;</code></td>
-<td>Store EEPROM</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;e&gt;</code></td>
-<td>Clear EEPROM</td>
-<td>None</td>
-</tr>
-</tbody>
-</table>
-<h2 id="power-control">Power Control<a class="headerlink" href="#power-control" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;1&gt;</code></td>
-<td>Power ON all tracks</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;1 MAIN&gt;</code></td>
-<td>Power on MAIN track</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;1 PROG&gt;</code></td>
-<td>Power on PROG track</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;1 JOIN&gt;</code></td>
-<td>JOIN prog track to MAIN and power</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;1 track&gt;</code></td>
-<td>Power on given track</td>
-<td><code>track</code>: Track identifier</td>
-</tr>
-<tr>
-<td><code>&lt;0&gt;</code></td>
-<td>Power off all tracks</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;0 MAIN&gt;</code></td>
-<td>Power off MAIN track</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;0 PROG&gt;</code></td>
-<td>Power off PROG track</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;0 track&gt;</code></td>
-<td>Power off given track</td>
-<td><code>track</code>: Track identifier</td>
-</tr>
-</tbody>
-</table>
-<h2 id="locomotive-control">Locomotive Control<a class="headerlink" href="#locomotive-control" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;t loco&gt;</code></td>
-<td>Request loco status</td>
-<td><code>loco</code>: Locomotive ID</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;t loco tspeed direction&gt;</code></td>
-<td>Set throttle speed and direction</td>
-<td><code>loco</code>: ID, <code>tspeed</code>: 0-127, <code>direction</code>: 0/1</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;t ignore loco tspeed direction&gt;</code></td>
-<td>Set throttle speed and direction</td>
-<td>Legacy format</td>
-<td>⚠️ Deprecated</td>
-</tr>
-<tr>
-<td><code>&lt;- loco&gt;</code></td>
-<td>Remove loco state and reminders</td>
-<td><code>loco</code>: Locomotive ID</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;-&gt;</code></td>
-<td>Clear loco state and reminder table</td>
-<td>None</td>
-<td>Active</td>
-</tr>
-</tbody>
-</table>
-<h2 id="function-control">Function Control<a class="headerlink" href="#function-control" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;F loco function onoff&gt;</code></td>
-<td>Set loco function ON/OFF</td>
-<td><code>loco</code>: ID, <code>function</code>: Function number, <code>onoff</code>: 0/1</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;F loco DCCFREQ freqvalue&gt;</code></td>
-<td>Set DC frequency for loco</td>
-<td><code>loco</code>: ID, <code>freqvalue</code>: Frequency value</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;f loco byte1&gt;</code></td>
-<td>Set loco function group</td>
-<td><code>loco</code>: ID, <code>byte1</code>: Function byte</td>
-<td>⚠️ Deprecated</td>
-</tr>
-<tr>
-<td><code>&lt;f loco group byte2&gt;</code></td>
-<td>Set loco function group</td>
-<td><code>loco</code>: ID, <code>group</code>: Group ID, <code>byte2</code>: Function byte</td>
-<td>⚠️ Deprecated</td>
-</tr>
-</tbody>
-</table>
-<h2 id="consist-control">Consist Control<a class="headerlink" href="#consist-control" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;^&gt;</code></td>
-<td>Show all consists</td>
-<td></td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;^ loco1 loco2 ... &gt;</code></td>
-<td>Create Consist</td>
-<td><code>loco</code>: ID, negative for reversed loco</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;^ loco1&gt;</code></td>
-<td>Deletes consist</td>
-<td><code>loco1</code>: ID</td>
-<td>Active</td>
-</tr>
-</tbody>
-</table>
-<h2 id="turnoutpoint-control">Turnout/Point Control<a class="headerlink" href="#turnoutpoint-control" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;T&gt;</code></td>
-<td>List all turnouts/points</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;T id&gt;</code></td>
-<td>Delete turnout/point</td>
-<td><code>id</code>: Turnout ID</td>
-</tr>
-<tr>
-<td><code>&lt;T id X&gt;</code></td>
-<td>List turnout/point details</td>
-<td><code>id</code>: Turnout ID</td>
-</tr>
-<tr>
-<td><code>&lt;T id T&gt;</code></td>
-<td>Throw turnout/point</td>
-<td><code>id</code>: Turnout ID</td>
-</tr>
-<tr>
-<td><code>&lt;T id C&gt;</code></td>
-<td>Close turnout/point</td>
-<td><code>id</code>: Turnout ID</td>
-</tr>
-<tr>
-<td><code>&lt;T id value&gt;</code></td>
-<td>Close (value=0) or Throw turnout</td>
-<td><code>id</code>: Turnout ID, <code>value</code>: 0/1</td>
-</tr>
-<tr>
-<td><code>&lt;T id SERVO vpin closedValue thrownValue&gt;</code></td>
-<td>Create servo turnout</td>
-<td><code>id</code>: ID, <code>vpin</code>: Pin, values for positions</td>
-</tr>
-<tr>
-<td><code>&lt;T id VPIN vpin&gt;</code></td>
-<td>Create pin turnout</td>
-<td><code>id</code>: ID, <code>vpin</code>: Pin number</td>
-</tr>
-<tr>
-<td><code>&lt;T id DCC addr subadd&gt;</code></td>
-<td>Create DCC turnout</td>
-<td><code>id</code>: ID, <code>addr</code>: Address, <code>subadd</code>: Sub-address</td>
-</tr>
-<tr>
-<td><code>&lt;T id DCC linearAddr&gt;</code></td>
-<td>Create DCC turnout</td>
-<td><code>id</code>: ID, <code>linearAddr</code>: Linear address</td>
-</tr>
-<tr>
-<td><code>&lt;T id addr subadd&gt;</code></td>
-<td>Create DCC turnout</td>
-<td><code>id</code>: ID, <code>addr</code>: Address, <code>subadd</code>: Sub-address</td>
-</tr>
-<tr>
-<td><code>&lt;T id vpin closedValue thrownValue&gt;</code></td>
-<td>Create SERVO turnout</td>
-<td><code>id</code>: ID, <code>vpin</code>: Pin, position values</td>
-</tr>
-</tbody>
-</table>
-<h2 id="sensor-control">Sensor Control<a class="headerlink" href="#sensor-control" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;S id vpin pullup&gt;</code></td>
-<td>Create sensor</td>
-<td><code>id</code>: Sensor ID, <code>vpin</code>: Pin, <code>pullup</code>: Pull-up setting</td>
-</tr>
-<tr>
-<td><code>&lt;S id&gt;</code></td>
-<td>Delete sensor</td>
-<td><code>id</code>: Sensor ID</td>
-</tr>
-<tr>
-<td><code>&lt;S&gt;</code></td>
-<td>List sensors</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;Q&gt;</code></td>
-<td>List all sensors</td>
-<td>None</td>
-</tr>
-</tbody>
-</table>
-<h2 id="cv-programming">CV Programming<a class="headerlink" href="#cv-programming" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;W cv value&gt;</code></td>
-<td>Write CV value on PROG track</td>
-<td><code>cv</code>: CV number, <code>value</code>: Value</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;W loco&gt;</code></td>
-<td>Write loco address on PROG track</td>
-<td><code>loco</code>: Address</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;W CONSIST loco&gt;</code></td>
-<td>Write consist address on PROG track</td>
-<td><code>loco</code>: Address</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;W CONSIST loco REVERSE&gt;</code></td>
-<td>Write consist address and reverse flag</td>
-<td><code>loco</code>: Address</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;W cv bitvalue bit&gt;</code></td>
-<td>Write CV bit on prog track</td>
-<td><code>cv</code>: CV, <code>bitvalue</code>: Bit value, <code>bit</code>: Bit position</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;W cv value ignore1 ignore2&gt;</code></td>
-<td>Write CV value on PROG track</td>
-<td>Legacy format</td>
-<td>⚠️ Deprecated</td>
-</tr>
-<tr>
-<td><code>&lt;R cv&gt;</code></td>
-<td>Read CV</td>
-<td><code>cv</code>: CV number</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;R&gt;</code></td>
-<td>Read driveable loco ID</td>
-<td>None</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;R LOCOID&gt;</code></td>
-<td>Read loco ID (ignoring consist)</td>
-<td>None</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;R CONSIST&gt;</code></td>
-<td>Read consist ID</td>
-<td>None</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;R cv ignore1 ignore2&gt;</code></td>
-<td>Read CV value on PROG track</td>
-<td>Legacy format</td>
-<td>⚠️ Deprecated</td>
-</tr>
-<tr>
-<td><code>&lt;V cv value&gt;</code></td>
-<td>Fast read CV with expected value</td>
-<td><code>cv</code>: CV number, <code>value</code>: Expected value</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;V cv bit bitvalue&gt;</code></td>
-<td>Fast read bit with expected value</td>
-<td><code>cv</code>: CV, <code>bit</code>: Bit position, <code>bitvalue</code>: Expected</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;B cv bit bitvalue&gt;</code></td>
-<td>Write CV bit</td>
-<td><code>cv</code>: CV number, <code>bit</code>: Bit position, <code>bitvalue</code>: Value</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;w loco cv value&gt;</code></td>
-<td>POM write CV on main track</td>
-<td><code>loco</code>: ID, <code>cv</code>: CV number, <code>value</code>: Value</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;r loco cv&gt;</code></td>
-<td>POM read CV on main track</td>
-<td><code>loco</code>: ID, <code>cv</code>: CV number</td>
-<td>Railcom dependent</td>
-</tr>
-<tr>
-<td><code>&lt;b loco cv bit bitvalue&gt;</code></td>
-<td>POM write CV bit on main track</td>
-<td><code>loco</code>: ID, <code>cv</code>: CV, <code>bit</code>: Position, <code>bitvalue</code>: Value</td>
-<td>Active</td>
-</tr>
-</tbody>
-</table>
-<h2 id="dcc-accessory-commands">DCC Accessory Commands<a class="headerlink" href="#dcc-accessory-commands" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;a address subaddress activate&gt;</code></td>
-<td>Send DCC accessory command</td>
-<td><code>address</code>: Address, <code>subaddress</code>: Sub-address, <code>activate</code>: 0/1</td>
-</tr>
-<tr>
-<td><code>&lt;a address subaddress activate onoff&gt;</code></td>
-<td>Send DCC accessory command with on/off</td>
-<td><code>address</code>: Address, <code>subaddress</code>: Sub, <code>activate</code>: 0/1, <code>onoff</code>: 0/1</td>
-</tr>
-<tr>
-<td><code>&lt;a linearaddress activate&gt;</code></td>
-<td>Send DCC accessory command</td>
-<td><code>linearaddress</code>: Linear address, <code>activate</code>: 0/1</td>
-</tr>
-<tr>
-<td><code>&lt;A address value&gt;</code></td>
-<td>Send DCC extended accessory (Aspect) command</td>
-<td><code>address</code>: Address, <code>value</code>: Aspect value</td>
-</tr>
-</tbody>
-</table>
-<h2 id="momentum-control">Momentum Control<a class="headerlink" href="#momentum-control" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;m LINEAR&gt;</code></td>
-<td>Set momentum algorithm to linear acceleration</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;m POWER&gt;</code></td>
-<td>Set momentum algorithm based on speed difference</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;m loco momentum&gt;</code></td>
-<td>Set momentum for loco (accel and braking)</td>
-<td><code>loco</code>: ID, <code>momentum</code>: Value</td>
-</tr>
-<tr>
-<td><code>&lt;m loco accelerating braking&gt;</code></td>
-<td>Set momentum for loco</td>
-<td><code>loco</code>: ID, <code>accelerating</code>: Value, <code>braking</code>: Value</td>
-</tr>
-</tbody>
-</table>
-<h2 id="output-control">Output Control<a class="headerlink" href="#output-control" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;Z&gt;</code></td>
-<td>List output definitions</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;Z id pin iflag&gt;</code></td>
-<td>Create output</td>
-<td><code>id</code>: Output ID, <code>pin</code>: Pin number, <code>iflag</code>: Invert flag</td>
-</tr>
-<tr>
-<td><code>&lt;Z id active&gt;</code></td>
-<td>Set output</td>
-<td><code>id</code>: Output ID, <code>active</code>: 0/1</td>
-</tr>
-<tr>
-<td><code>&lt;Z id&gt;</code></td>
-<td>Delete output</td>
-<td><code>id</code>: Output ID</td>
-</tr>
-</tbody>
-</table>
-<h2 id="pin-control">Pin Control<a class="headerlink" href="#pin-control" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;z vpin&gt;</code></td>
-<td>Set pin HIGH if vpin positive, LOW if negative</td>
-<td><code>vpin</code>: Pin number (signed)</td>
-</tr>
-<tr>
-<td><code>&lt;z vpin analog&gt;</code></td>
-<td>Write analog device value</td>
-<td><code>vpin</code>: Pin, <code>analog</code>: Value</td>
-</tr>
-<tr>
-<td><code>&lt;z vpin analog profile&gt;</code></td>
-<td>Write analog device using profile</td>
-<td><code>vpin</code>: Pin, <code>analog</code>: Value, <code>profile</code>: Profile ID</td>
-</tr>
-<tr>
-<td><code>&lt;z vpin analog profile duration&gt;</code></td>
-<td>Change analog value over duration</td>
-<td><code>vpin</code>: Pin, <code>analog</code>: Value, <code>profile</code>: Profile, <code>duration</code>: Time</td>
-</tr>
-</tbody>
-</table>
-<h2 id="neopixel-control">NeoPixel Control<a class="headerlink" href="#neopixel-control" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;o vpin&gt;</code></td>
-<td>Set neopixel on (vpin&gt;0) or off (vpin&lt;0)</td>
-<td><code>vpin</code>: Pin number (signed)</td>
-</tr>
-<tr>
-<td><code>&lt;o vpin count&gt;</code></td>
-<td>Set multiple neopixels on/off</td>
-<td><code>vpin</code>: Pin, <code>count</code>: Number of pixels</td>
-</tr>
-<tr>
-<td><code>&lt;o vpin r g b&gt;</code></td>
-<td>Set neopixel colour</td>
-<td><code>vpin</code>: Pin, <code>r</code>: Red, <code>g</code>: Green, <code>b</code>: Blue</td>
-</tr>
-<tr>
-<td><code>&lt;o vpin r g b count&gt;</code></td>
-<td>Set multiple neopixels colour</td>
-<td><code>vpin</code>: Pin, <code>r</code>: Red, <code>g</code>: Green, <code>b</code>: Blue, <code>count</code>: Count</td>
-</tr>
-</tbody>
-</table>
-<h2 id="turntable-control">Turntable Control<a class="headerlink" href="#turntable-control" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;I&gt;</code></td>
-<td>List all turntables</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;I id&gt;</code></td>
-<td>Broadcast turntable type and current position</td>
-<td><code>id</code>: Turntable ID</td>
-</tr>
-<tr>
-<td><code>&lt;I id position&gt;</code></td>
-<td>Rotate a DCC turntable</td>
-<td><code>id</code>: ID, <code>position</code>: Position</td>
-</tr>
-<tr>
-<td><code>&lt;I id DCC home&gt;</code></td>
-<td>Create DCC turntable</td>
-<td><code>id</code>: ID, <code>home</code>: Home position</td>
-</tr>
-<tr>
-<td><code>&lt;I id position activity&gt;</code></td>
-<td>Rotate an EXTT turntable</td>
-<td><code>id</code>: ID, <code>position</code>: Position, <code>activity</code>: Activity</td>
-</tr>
-<tr>
-<td><code>&lt;I id EXTT vpin home&gt;</code></td>
-<td>Create an EXTT turntable</td>
-<td><code>id</code>: ID, <code>vpin</code>: Pin, <code>home</code>: Home position</td>
-</tr>
-<tr>
-<td><code>&lt;I id ADD position value angle&gt;</code></td>
-<td>Add turntable position</td>
-<td><code>id</code>: ID, <code>position</code>: Position, <code>value</code>: Value, <code>angle</code>: Angle</td>
-</tr>
-</tbody>
-</table>
-<h2 id="sound-control">Sound Control<a class="headerlink" href="#sound-control" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;y vpin PLAY track [volume]&gt;</code></td>
-<td>Play track</td>
-</tr>
-<tr>
-<td><code>&lt;y vpin REPEAT track [volume]&gt;</code></td>
-<td>Play track repeat</td>
-</tr>
-<tr>
-<td><code>&lt;y vpin STOP&gt;</code></td>
-<td>Stop playing</td>
-</tr>
-<tr>
-<td><code>&lt;y vpin PAUSE&gt;</code></td>
-<td>Pause playing</td>
-</tr>
-<tr>
-<td><code>&lt;y vpin RESUME&gt;</code></td>
-<td>Resume playing</td>
-</tr>
-<tr>
-<td><code>&lt;y vpin FOLDER folder&gt;</code></td>
-<td>Set folder to play from</td>
-</tr>
-<tr>
-<td><code>&lt;y vpin VOLUME vol&gt;</code></td>
-<td>Set default volume 0..30</td>
-</tr>
-<tr>
-<td><code>&lt;y vpin EQ type&gt;</code></td>
-<td>Set EQ type NORMAL, POP, ROCK, JAZZ, CLASSCS, BASS</td>
-</tr>
-<tr>
-<td><code>&lt;y vpin RESET&gt;</code></td>
-<td>Reset player</td>
-</tr>
-</tbody>
-</table>
-<h2 id="throttle-information-commands">Throttle Information Commands<a class="headerlink" href="#throttle-information-commands" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;J M&gt;</code></td>
-<td>List stash values</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;J M stash_id&gt;</code></td>
-<td>Get stash value</td>
-<td><code>stash_id</code>: Stash identifier</td>
-</tr>
-<tr>
-<td><code>&lt;J M CLEAR ALL&gt;</code></td>
-<td>Clear all stash values</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;J M CLEAR stash_id&gt;</code></td>
-<td>Clear given stash</td>
-<td><code>stash_id</code>: Stash identifier</td>
-</tr>
-<tr>
-<td><code>&lt;J M stashId locoId&gt;</code></td>
-<td>Set stash value</td>
-<td><code>stashId</code>: Stash ID, <code>locoId</code>: Loco ID</td>
-</tr>
-<tr>
-<td><code>&lt;J M CLEAR ANY locoId&gt;</code></td>
-<td>Clear all stash entries containing locoId</td>
-<td><code>locoId</code>: Locomotive ID</td>
-</tr>
-<tr>
-<td><code>&lt;J C&gt;</code></td>
-<td>Get fastclock time</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;J C mmmm nn&gt;</code></td>
-<td>Set fastclock time</td>
-<td><code>mmmm</code>: Minutes, <code>nn</code>: Rate</td>
-</tr>
-<tr>
-<td><code>&lt;J G&gt;</code></td>
-<td>Report gauge limits</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;J I&gt;</code></td>
-<td>Report currents</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;J A&gt;</code></td>
-<td>List routes</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;J R&gt;</code></td>
-<td>List roster</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;J R id&gt;</code></td>
-<td>Get roster for loco</td>
-<td><code>id</code>: Locomotive ID</td>
-</tr>
-<tr>
-<td><code>&lt;J T&gt;</code></td>
-<td>Get turnout/point list</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;J T id&gt;</code></td>
-<td>Get turnout state and description</td>
-<td><code>id</code>: Turnout ID</td>
-</tr>
-<tr>
-<td><code>&lt;J O&gt;</code></td>
-<td>List turntable IDs</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;J O id&gt;</code></td>
-<td>List turntable state</td>
-<td><code>id</code>: Turntable ID</td>
-</tr>
-<tr>
-<td><code>&lt;J P id&gt;</code></td>
-<td>List turntable positions</td>
-<td><code>id</code>: Turntable ID</td>
-</tr>
-</tbody>
-</table>
-<h2 id="track-manager">Track Manager<a class="headerlink" href="#track-manager" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;=&gt;</code></td>
-<td>List track manager states</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;= track MAIN&gt;</code></td>
-<td>Set track to MAIN</td>
-<td><code>track</code>: Track identifier</td>
-</tr>
-<tr>
-<td><code>&lt;= track MAIN_INV&gt;</code></td>
-<td>Set track to MAIN inverted polarity</td>
-<td><code>track</code>: Track identifier</td>
-</tr>
-<tr>
-<td><code>&lt;= track MAIN_AUTO&gt;</code></td>
-<td>Set track to MAIN with auto reversing</td>
-<td><code>track</code>: Track identifier</td>
-</tr>
-<tr>
-<td><code>&lt;= track PROG&gt;</code></td>
-<td>Set track to PROG</td>
-<td><code>track</code>: Track identifier</td>
-</tr>
-<tr>
-<td><code>&lt;= track OFF&gt;</code></td>
-<td>Set track power OFF</td>
-<td><code>track</code>: Track identifier</td>
-</tr>
-<tr>
-<td><code>&lt;= track NONE&gt;</code></td>
-<td>Set track no output</td>
-<td><code>track</code>: Track identifier</td>
-</tr>
-<tr>
-<td><code>&lt;= track EXT&gt;</code></td>
-<td>Set track to use external sync</td>
-<td><code>track</code>: Track identifier</td>
-</tr>
-<tr>
-<td><code>&lt;= track AUTO&gt;</code></td>
-<td>Update track to auto reverse</td>
-<td><code>track</code>: Track identifier</td>
-</tr>
-<tr>
-<td><code>&lt;= track INV&gt;</code></td>
-<td>Update track to inverse polarity</td>
-<td><code>track</code>: Track identifier</td>
-</tr>
-<tr>
-<td><code>&lt;= track DC loco&gt;</code></td>
-<td>Set track to DC</td>
-<td><code>track</code>: Track ID, <code>loco</code>: Loco ID</td>
-</tr>
-<tr>
-<td><code>&lt;= track DC_INV loco&gt;</code></td>
-<td>Set track to DC with inverted polarity</td>
-<td><code>track</code>: Track ID, <code>loco</code>: Loco ID</td>
-</tr>
-<tr>
-<td><code>&lt;= track DCX loco&gt;</code></td>
-<td>Set track to DC with inverted polarity</td>
-<td><code>track</code>: Track ID, <code>loco</code>: Loco ID</td>
-</tr>
-</tbody>
-</table>
-<h2 id="configuration-commands">Configuration Commands<a class="headerlink" href="#configuration-commands" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;C PROGBOOST&gt;</code></td>
-<td>Configure PROG track boost</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;C RESET&gt;</code></td>
-<td>Reset and restart <strong>EX-CommandStation</strong></td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;C SPEED28&gt;</code></td>
-<td>Set all DCC speed commands as 28 step</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;C SPEED128&gt;</code></td>
-<td>Set all DCC speed commands to 128 step (default)</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;C RAILCOM ON&gt;</code></td>
-<td>Enable Railcom cutout</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;C RAILCOM OFF&gt;</code></td>
-<td>Disable Railcom cutout</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;C RAILCOM DEBUG&gt;</code></td>
-<td>Enable Railcom cutout for scope testing</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;C WIFI "ssid" "password"&gt;</code></td>
-<td>Reconfigure stored STA WiFi credentials</td>
-<td><code>ssid</code>: Network name, <code>password</code>: Password</td>
-</tr>
-<tr>
-<td><code>&lt;C WIFI AP "ssid" "password" [channel]&gt;</code></td>
-<td>Reconfigure stored WiFi AP</td>
-<td><code>ssid</code>: Network name, <code>password</code>: Password</td>
-</tr>
-<tr>
-<td><code>&lt;C WIFI HIDDENAP "ssid" "password" [channel]&gt;</code></td>
-<td>Reconfigure stored WiFi AP</td>
-<td><code>ssid</code>: Network name, <code>password</code>: Password</td>
-</tr>
-<tr>
-<td><code>&lt;C WIFI DEFAULT&gt;</code></td>
-<td>Set WiFi to default</td>
-<td></td>
-</tr>
-<tr>
-<td><code>&lt;C WIFI ON/OFF&gt;</code></td>
-<td>Set WiFi on/off name</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="diagnostic-commands">Diagnostic Commands<a class="headerlink" href="#diagnostic-commands" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;D ACK ON&gt;</code></td>
-<td>Enable PROG track diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D ACK OFF&gt;</code></td>
-<td>Disable PROG track diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D ACK LIMIT value&gt;</code></td>
-<td>Set ACK detection limit mA</td>
-<td><code>value</code>: Current limit in mA</td>
-</tr>
-<tr>
-<td><code>&lt;D ACK MIN value MS&gt;</code></td>
-<td>Set ACK minimum duration mS</td>
-<td><code>value</code>: Duration in milliseconds</td>
-</tr>
-<tr>
-<td><code>&lt;D ACK MIN value&gt;</code></td>
-<td>Set ACK minimum duration µS</td>
-<td><code>value</code>: Duration in microseconds</td>
-</tr>
-<tr>
-<td><code>&lt;D ACK MAX value MS&gt;</code></td>
-<td>Set ACK maximum duration mS</td>
-<td><code>value</code>: Duration in milliseconds</td>
-</tr>
-<tr>
-<td><code>&lt;D ACK MAX value&gt;</code></td>
-<td>Set ACK maximum duration µS</td>
-<td><code>value</code>: Duration in microseconds</td>
-</tr>
-<tr>
-<td><code>&lt;D ACK RETRY value&gt;</code></td>
-<td>Set ACK retry count</td>
-<td><code>value</code>: Retry count</td>
-</tr>
-<tr>
-<td><code>&lt;D CABS&gt;</code></td>
-<td>Diagnostic display loco state table</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D RAM&gt;</code></td>
-<td>Diagnostic display free RAM</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D CMD ON&gt;</code></td>
-<td>Enable command input diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D CMD OFF&gt;</code></td>
-<td>Disable command input diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D RAILCOM ON&gt;</code></td>
-<td>Enable Railcom diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D RAILCOM OFF&gt;</code></td>
-<td>Disable Railcom diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D WIFI ON&gt;</code></td>
-<td>Enable WiFi diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D WIFI OFF&gt;</code></td>
-<td>Disable WiFi diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D WIFI SHOW&gt;</code></td>
-<td>Shows WiFi settings</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D ETHERNET ON&gt;</code></td>
-<td>Enable Ethernet diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D ETHERNET OFF&gt;</code></td>
-<td>Disable Ethernet diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D WIT ON&gt;</code></td>
-<td>Enable Withrottle diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D WIT OFF&gt;</code></td>
-<td>Disable Withrottle diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D LCN ON&gt;</code></td>
-<td>Enable LCN diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D LCN OFF&gt;</code></td>
-<td>Disable LCN diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D WEBSOCKET ON&gt;</code></td>
-<td>Enable Websocket diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D WEBSOCKET OFF&gt;</code></td>
-<td>Disable Websocket diagnostics</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D EEPROM numentries&gt;</code></td>
-<td>Dump EEPROM contents</td>
-<td><code>numentries</code>: Number of entries</td>
-</tr>
-<tr>
-<td><code>&lt;D ANOUT vpin position&gt;</code></td>
-<td>Test analog output</td>
-<td><code>vpin</code>: Pin, <code>position</code>: Position</td>
-</tr>
-<tr>
-<td><code>&lt;D ANOUT vpin position profile&gt;</code></td>
-<td>Test analog output with profile</td>
-<td><code>vpin</code>: Pin, <code>position</code>: Position, <code>profile</code>: Profile</td>
-</tr>
-<tr>
-<td><code>&lt;D SERVO vpin position&gt;</code></td>
-<td>Test servo</td>
-<td><code>vpin</code>: Pin, <code>position</code>: Position</td>
-</tr>
-<tr>
-<td><code>&lt;D SERVO vpin position profile&gt;</code></td>
-<td>Test servo with profile</td>
-<td><code>vpin</code>: Pin, <code>position</code>: Position, <code>profile</code>: Profile</td>
-</tr>
-<tr>
-<td><code>&lt;D ANIN vpin&gt;</code></td>
-<td>Display analogue input value</td>
-<td><code>vpin</code>: Pin number</td>
-</tr>
-<tr>
-<td><code>&lt;D HAL SHOW&gt;</code></td>
-<td>Show HAL devices table</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D HAL RESET&gt;</code></td>
-<td>Reset all HAL devices</td>
-<td>None</td>
-</tr>
-<tr>
-<td><code>&lt;D TT vpin steps&gt;</code></td>
-<td>Test turntable</td>
-<td><code>vpin</code>: Pin, <code>steps</code>: Step count</td>
-</tr>
-<tr>
-<td><code>&lt;D TT vpin steps activity&gt;</code></td>
-<td>Test turntable with activity</td>
-<td><code>vpin</code>: Pin, <code>steps</code>: Steps, <code>activity</code>: Activity</td>
-</tr>
-</tbody>
-</table>
-<h2 id="raw-dcc-packets">Raw DCC Packets<a class="headerlink" href="#raw-dcc-packets" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-<th>Parameters</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;M ignore d0 d1 d2 d3 d4 d5&gt;</code></td>
-<td>Send up to 5 byte DCC packet on MAIN track</td>
-<td><code>ignore</code>: Ignored, <code>d0-d5</code>: Hex bytes</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;P ignore d0 d1 d2 d3 d4 d5&gt;</code></td>
-<td>Send up to 5 byte DCC packet on PROG track</td>
-<td><code>ignore</code>: Ignored, <code>d0-d5</code>: Hex bytes</td>
-<td>Active</td>
-</tr>
-<tr>
-<td><code>&lt;c&gt;</code></td>
-<td>Report main track current</td>
-<td>None</td>
-<td>⚠️ Deprecated</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition info">
-<p class="admonition-title">Speed Values</p>
+<h2 id="conventions-used-for-command-descriptions">Conventions used for command descriptions<a class="headerlink" href="#conventions-used-for-command-descriptions" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>0</strong>: Stop</li>
-<li><strong>1-127</strong>: Variable speed (1=slowest, 127=fastest)</li>
+<li><code>&lt;</code> and <code>&gt;</code> - All DCC-EX commands are surrounded by these characters to indicate the beginning and end, these must always be included</li>
+<li>First letter or number - These are called OPCODES, are case sensitive, and must be specified as directed, e.g. <code>1</code>, <code>c</code>, or <code>-</code></li>
+<li>CAPITALISED words - These are parameters referred to as keywords, and should be specified as directed, e.g. <code>MAIN</code> (note these are not case sensitive, however capitalising makes them easier to distinguish from other parameters)</li>
+<li>lowercase words - These are parameters that must be provided or are returned, with multiple parameters separated by a space " ", e.g. <code>loco</code> or <code>«loco»</code></li>
+<li>Square brackets <code>[]</code> - Parameters within square brackets <code>[]</code> are optional and may be omitted, and if specifying these parameters, do not include the square brackets themselves</li>
+<li>| - Use of the | character means you need to provide one of the provided options only, for example <code>&lt;0|1 MAIN|PROG|JOIN&gt;</code> becomes either <code>&lt;0 MAIN&gt;</code> or <code>&lt;1 MAIN&gt;</code></li>
+<li><code>0|1</code> DIRECTION: 1=forward, 0=reverse.</li>
 </ul>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Direction Values</p>
-<ul>
-<li><strong>0</strong>: Reverse</li>
-<li><strong>1</strong>: Forward</li>
-</ul>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Deprecated Commands</p>
-<p>Commands marked with ⚠️ are deprecated and may be removed in future versions. Use the recommended alternatives where available.</p>
-</div>
+<h2 id="common-elements-parameters">Common Elements / Parameters<a class="headerlink" href="#common-elements-parameters" title="Permanent link">&para;</a></h2>
+<p>The following are element / parameters that are common across multiple commands and are described here for ease of reference.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>cab</strong> or <br/><strong>loco</strong></td>
+<td>The short (1-127) or long (128-10293) address of the engine decoder. <br/> (This has to be already programmed in the decoder.) <br/> Note: DCC-EX commands do not distinguish between short and long DCC addresses, so you can use the same command format for both.</td>
+</tr>
+<tr>
+<td><strong>dir</strong> or <br/><strong>direction</strong></td>
+<td>One of <br/>- 1=forward <br/>- 0=reverse</td>
+</tr>
+<tr>
+<td><strong>tSpeed</strong></td>
+<td>0-127 or -1 for Emergency Stop</td>
+</tr>
+<tr>
+<td><strong>speedByte</strong></td>
+<td>Speed in DCC speedstep format. This is an encoded (1-7 bits) byte. <br/>The single value incorporates both speed and direction, with the following values: <br/>- reverse - 2-127 = speed 1-126, 0 = stop, 1 = Emergency Stop <br/>- forward - 130-255 = speed 1-126,  128 = stop, 129 = Emergency Stop</td>
+</tr>
+<tr>
+<td><strong>id</strong></td>
+<td>The numeric ID (0-32767) assigned to an element to control. <br/><em>ids</em> are generally unique within the element type, but not across element types. <br/>(NOTE: <em>ids</em> are shared between Turnouts/Points, Sensors and Outputs)</td>
+</tr>
+<tr>
+<td><strong>vpin</strong></td>
+<td>Generally, the pin number of the physical input or output GPIO to receive information from or to control. <br/><em>vpins</em> are normally assigned to an <em>id</em> to use in subsequent commands. <br/><br/>For GPIOs on the microcontroller, this is the same as the pin number.  For servo outputs and I/O expanders, it is the pin number defined for the HAL device (if present), for example 100-115 for servos attached to the first PCA9685 Servo Controller module, 200-215 for the second PCA9685 Servo Controller module, 300-315 for the first PCA9685 I/O Expander module, and 400-415 for the second PCA9685 I/O  Expander module.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
+<p><em>DCC-EX Serial Commands</em> are also referred to as <em>Native DCC-EX Commands/Protocol</em> or <em>DCC-EX Native Commands/Protocol</em>.</p>
+<p>Refer to the <a href="../../throttles/withrottle-vs-native-protocol/">WiThrottle VS Native Serial Protocol</a> page for information on the differences to the WiThrottle protocol/commands.</p>
 
 
 
@@ -10141,7 +9777,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 24, 2026 01:56:51 UTC">June 24, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 3, 2026 07:34:47 UTC">August 3, 2026</span>
   </span>
 
     
@@ -10183,31 +9819,15 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
         
-          
-          <a href="../serial-command-list/" class="md-footer__link md-footer__link--prev" aria-label="Previous: DCC-EX Command List">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                DCC-EX Command List
-              </div>
-            </div>
-          </a>
-        
         
           
-          <a href="../legacy-command-reference/" class="md-footer__link md-footer__link--next" aria-label="Next: Legacy Command Reference">
+          <a href="serial-command-list/" class="md-footer__link md-footer__link--next" aria-label="Next: Command List">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Legacy Command Reference
+                Command List
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -10262,7 +9882,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.select", "content.code.copy", "content.code.annotate", "content.tooltips", "header.autohide", "navigation.footer", "navigation.path", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.select", "content.code.copy", "content.code.annotate", "content.tooltips", "header.autohide", "navigation.footer", "navigation.path", "navigation.tabs", "navigation.top", "navigation.tracking", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
@@ -10276,6 +9896,10 @@
         <script src="../../_static/scripts/clickable-cards.js"></script>
       
         <script src="../../_static/scripts/legacy-docs-new-tab.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/tablesort.js"></script>
       
         <script src="../../js/open_in_new_tab.js"></script>
       
